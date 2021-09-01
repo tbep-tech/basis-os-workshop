@@ -1,0 +1,20 @@
+--- 
+title: |
+ ![](img/BASIS Open Science workshop.png){width=8in}
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: [book.bib]
+biblio-style: apalike
+link-citations: yes
+github-repo: tbep-tech/basis-os-workshop
+description: "This is a web page for the BASIS7-ANEP Open Science Workshop"
+---
+
+```{r setup}
+knitr::opts_chunk$set(echo = F, fig.align = 'center', out.width = '100%')
+```
+
+# Agenda
+
+
+Welcome to the BASIS7-ANEP open science workshop: core concepts for impactful research and resource management.
