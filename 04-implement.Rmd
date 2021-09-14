@@ -1,0 +1,9 @@
+# Lowering barriers to inclusion and addressing key critiques {#implement}
+
+* Learning curves/overhead associated with new the tools
+
+* Fear of being open - exposure of mistakes, getting scooped, losing the competitive edge, etc.
+
+* What is open to the public agency (operating in the sunshine)? 
+
+* What is open to the academic? 

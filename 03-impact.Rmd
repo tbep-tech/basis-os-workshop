@@ -1,0 +1,17 @@
+# Open science for impactful products {#impact}
+
+* Data are foundation of research that can inform management decisions, how these date are curated and delivered can make/break the impact of a project, OS principles can help
+
+* What are tidy data?
+
+* What is a data dictionary
+
+* What is metadata and why is it so important?
+
+* Where do data live? 
+
+* Exercise idea 1: Use your shared workspace to create a data dictionary for a sample dataset
+
+* Exercise idea 2: Use your shared workspace to create a metadata file for a sample dataset
+
+* Exercise idea 3: Make an untidy dataset tidy, this will have to be done with a simple dataset unless we want to get into other tools like the tidyverse

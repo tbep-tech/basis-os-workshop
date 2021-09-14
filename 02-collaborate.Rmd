@@ -1,0 +1,9 @@
+# Open Science for collaboration {#collaborate}
+
+* Essential elements of collaboration (version control, workflow management, data repositories)
+
+* Tools for collaboration (Slack, Trello, Google Docs, GitHub, etc.)
+
+* Exercise idea 1: in small groups, setup a shared workspace using one of the collaborative platforms 
+
+* Exercise idea 2: Develop a code of conduct for your group in a shared workspace
