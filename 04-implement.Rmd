@@ -11,3 +11,7 @@
 Here's some new text
 
 Awesome sauce
+
+![](img/cake.png)
+
+Here's a [link](https://tbep.org)
