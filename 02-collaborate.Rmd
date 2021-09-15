@@ -1,5 +1,7 @@
 # Open Science for collaboration {#collaborate}
 
+What is the expectation and how is it managed???
+
 * Essential elements of collaboration (version control, workflow management, data repositories)
 
 * Tools for collaboration (Slack, Trello, Google Docs, GitHub, etc.)
