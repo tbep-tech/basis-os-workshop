@@ -1,14 +1,14 @@
 --- 
 site: bookdown::bookdown_site
 documentclass: book
-bibliography: [book.bib]
 biblio-style: apalike
 link-citations: yes
+bibliography: [refs.bib]
 github-repo: tbep-tech/cerf-os-workshop
 description: "This is a web page for the CERF 2021 Open Science Workshop"
 ---
 
-```{r setup}
+```{r}
 knitr::opts_chunk$set(echo = F, fig.align = 'center', out.width = '100%')
 ```
 
@@ -24,7 +24,7 @@ By the end of this workshop, you should have a solid understanding of fundamenta
 
 ## Agenda {-}
 
-* \@ref(community): An open science community of practice (__30 min__)
+* \@ref(basics): The basics of open science (__30 min__)
 * \@ref(collaborate): Open Science for collaboration (__90 min__)
 * \@ref(impact): Open science for impactful products (__90 min__)
 * \@ref(implement): Lowering barriers to inclusion and addressing key critiques (__30 min__)
