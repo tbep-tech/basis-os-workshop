@@ -20,7 +20,7 @@ knitr::include_graphics('img/Open Science Workshop.png')
  
 Welcome to the CERF 2021 open science workshop: core concepts for impactful research and resource management. Open science (OS) has been advocated as an effective approach to create reproducible, transparent, and actionable research products. However, widespread adoption among the coastal and estuarine research community has not occurred despite its perceived benefits. In the face of major challenges like global warming and sea level rise, the collaborative framework provided by OS is needed now more than ever. This workshop will cover a half-day of material introducing participants to core concepts of OS. The target audience includes anyone interested in applying OS in their own workflows as part of a larger research and resource management team.
 
-For virtual participants, this workshop would require participants to have access to the internet and specific open science tools like R and GitHub. Ideally, this would be an in person workshop though virtual participation would be possible. For this workshop to be impactful, participants will be encouraged to engage in open discussion and exchange of ideas related to open science. This is accomplished best in person, though via a virtual platform like zoom working groups can be identified and used to help facilitate the exchange of open science ideas across various disciplines and professional sectors.
+By the end of this workshop, you should have a solid understanding of fundamental concepts in open science and how they can be applied to help bridge the research-management divide.  You will also have the skills to understand how collaborative open science tools can be used to increase efficiency and transparency, understand fundamental best practices for working with data to facilitate openness, and be able to apply these lessons within your own teams by effectively addressing barriers to adoption. 
 
 ## Agenda {-}
 
@@ -28,3 +28,16 @@ For virtual participants, this workshop would require participants to have acces
 * \@ref(collaborate): Open Science for collaboration (__90 min__)
 * \@ref(impact): Open science for impactful products (__90 min__)
 * \@ref(implement): Lowering barriers to inclusion and addressing key critiques (__30 min__)
+
+## Instructors{-}
+
+[Dr. Chris Anastasiou](mailto:chris.anastasiou@swfwmd.state.fl.us) is a Chief Environmental Scientist and the Springs Team Lead for the Southwest Florida Water Management District. He holds a Ph.D. in Marine Science from the University of South Florida and has been working in and around the springs of Florida for more than 25 years.
+
+[Dr. Marcus Beck](mailto:mbeck@tbep.org) is the Program Scientist for the Tampa Bay Estuary Program and is developing data analysis and visualization methods for Bay health indicators. He received his BS in Zoology from the University of Florida in 2007 and his MSc and PhD in Conservation Biology from the University of Minnesota in 2009 and 2013. Marcus has experience researching environmental indicators and developing open science products to support environmental decision-making. Marcus is also an avid software developer and creator of online dashboards that facilitate science communication.
+
+----------
+
+<a rel='license' href='http://creativecommons.org/licenses/by/4.0/'><img alt='Creative Commons License' style='border-width:0' src='https://i.creativecommons.org/l/by/4.0/88x31.png' /></a>&nbsp;&nbsp;This book is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by/4.0/'>Creative Commons Attribution 4.0 International License</a>.
+
+<a href="https://github.com/tbep-tech/cerf-os-workshop/actions"><img src="https://github.com/tbep-tech/cerf-os-workshop/workflows/build/badge.svg" alt="build"></a> This version of the book was built automatically with [GitHub Actions](https://github.com/tbep-tech/cerf-os-workshop/actions) on `r Sys.Date()`.
+
