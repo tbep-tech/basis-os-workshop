@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>1 Basics of open science | cerf-os-workshop.knit</title>
+  <meta name="description" content="This is a web page for the CERF 2021 Open Science Workshop" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="1 Basics of open science | cerf-os-workshop.knit" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a web page for the CERF 2021 Open Science Workshop" />
+  <meta name="github-repo" content="tbep-tech/cerf-os-workshop" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="1 Basics of open science | cerf-os-workshop.knit" />
+  
+  <meta name="twitter:description" content="This is a web page for the CERF 2021 Open Science Workshop" />
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="collaborate.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+<style type="text/css">
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">CERF open science workshop</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Course synopsis</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#agenda"><i class="fa fa-check"></i>Agenda</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#instructors"><i class="fa fa-check"></i>Instructors</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="basics.html"><a href="basics.html"><i class="fa fa-check"></i><b>1</b> Basics of open science</a><ul>
+<li class="chapter" data-level="1.1" data-path="basics.html"><a href="basics.html#lesson-outline"><i class="fa fa-check"></i><b>1.1</b> Lesson Outline</a></li>
+<li class="chapter" data-level="1.2" data-path="basics.html"><a href="basics.html#goals-and-motivation"><i class="fa fa-check"></i><b>1.2</b> Goals and motivation</a></li>
+<li class="chapter" data-level="1.3" data-path="basics.html"><a href="basics.html#why-open-science"><i class="fa fa-check"></i><b>1.3</b> Why open science?</a></li>
+<li class="chapter" data-level="1.4" data-path="basics.html"><a href="basics.html#learning-and-speaking-the-language-of-open-science"><i class="fa fa-check"></i><b>1.4</b> Learning and speaking the language of open science</a></li>
+<li class="chapter" data-level="1.5" data-path="basics.html"><a href="basics.html#the-fair-principles"><i class="fa fa-check"></i><b>1.5</b> The FAIR principles</a></li>
+<li class="chapter" data-level="1.6" data-path="basics.html"><a href="basics.html#schools-of-thought"><i class="fa fa-check"></i><b>1.6</b> Schools of thought</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="collaborate.html"><a href="collaborate.html"><i class="fa fa-check"></i><b>2</b> Open Science for collaboration</a></li>
+<li class="chapter" data-level="3" data-path="impact.html"><a href="impact.html"><i class="fa fa-check"></i><b>3</b> Open science for impactful products</a></li>
+<li class="chapter" data-level="4" data-path="implement.html"><a href="implement.html"><i class="fa fa-check"></i><b>4</b> Lowering barriers to inclusion and addressing key critiques</a></li>
+<li class="chapter" data-level="" data-path="resources-for-continued-learning.html"><a href="resources-for-continued-learning.html"><i class="fa fa-check"></i>Resources for continued learning</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="basics" class="section level1">
+<h1><span class="header-section-number">1</span> Basics of open science</h1>
+<div id="lesson-outline" class="section level2">
+<h2><span class="header-section-number">1.1</span> Lesson Outline</h2>
+<ul>
+<li><a href="basics.html#goals-and-motivation">Goals and motivation</a></li>
+<li><a href="basics.html#why-open-science">Why open science?</a></li>
+<li><a href="basics.html#learning-and-speaking-the-language-of-open-science">Learning and speaking the language of open science</a></li>
+<li><a href="basics.html#the-fair-principles">The FAIR principles</a></li>
+<li><a href="basics.html#schools-of-thought">Schools of thought</a></li>
+</ul>
+</div>
+<div id="goals-and-motivation" class="section level2">
+<h2><span class="header-section-number">1.2</span> Goals and motivation</h2>
+<p>This is the first module in our four hour workshop on open science. This module is designed to describe the need for open science, how it can improve research applications, and expose you to common ideas and terminology that we’ll be using throughout the day. Consider this your 30,000 foot view of open science. Our later modules will provide more detail on specific topics in open science that you can use for continued learning.</p>
+<ul>
+<li><strong>Goal</strong>: get comfortable with key ideas and concepts for understanding open science</li>
+<li><strong>Motivation</strong>: This is the first step in your open science journey!</li>
+</ul>
+</div>
+<div id="why-open-science" class="section level2">
+<h2><span class="header-section-number">1.3</span> Why open science?</h2>
+<p>Let’s start with revisiting the scientific process. I’m sure this looks familiar to all of you. This is geared towards an applied research question.</p>
+<p><img src="img/scipro.png" width="100%" style="display: block; margin: auto;" /></p>
+<p>Our basic scientific approach to discovery is motivated by a question or research goal, developing a hypothesis for the question, collecting data based on the hypothesis, developing a tool that can be used for decision-making, and summarizing the results in a conventional format.</p>
+<p>If you’re attempting applied science, your workflow may look something like this.</p>
+<p><img src="img/appscipro.png" width="100%" style="display: block; margin: auto;" /></p>
+<p>Many scientists, especially early career researchers (my past self included), may assume that this is sufficient to affect change. We write the report, sent it out into the world, and move on to the next project. This is a common mentality:</p>
+<blockquote>
+<p>“This 500-page report will answer all of their questions!”</p>
+</blockquote>
+<p>From the other side, such as the manager or administor, the report may be received like this:</p>
+<blockquote>
+<p>“This 500-page report answers none of my questions!”</p>
+</blockquote>
+<p>It’s dense, inaccessible, and there are probably questions about the underlying data and methods used to achieve the results. More importantly, it doesn’t present the information in an easily digestible format to quickly make the right decision. Sometimes, if you think you’re doing applied science, it may just be implied science that falls short of application.</p>
+<p><strong>Why is this conventional approach to science ineffective at seeding change?</strong></p>
+<p>As I’m sure we’re aware, the environmental management community is often siloed with each branch doing their own thing and speaking their own languages. Between the research (and often academic) and management community, we call this the research-management divide.</p>
+<p><img src="img/divide2.png" width="100%" style="display: block; margin: auto;" /></p>
+<p>A distinct barrier exists between how scientific products are developed and how they fail to meet management needs. This is often the result of communication barriers, irreproducible results, information loss with irreproducible results, inaccessible data, and opaque workflows.</p>
+<p>These barriers often begin at the publication level of research. This compelling graphic from <span class="citation">Michener et al. (<a href="#ref-Michener97" role="doc-biblioref">1997</a>)</span> describes the atrophy of information in a closed approach to creating science.</p>
+<p><img src="img/michener.png" width="100%" style="display: block; margin: auto;" /></p>
+<p>So how do we make changes to our workflows to ensure we can achieve truly applied science?</p>
+</div>
+<div id="learning-and-speaking-the-language-of-open-science" class="section level2">
+<h2><span class="header-section-number">1.4</span> Learning and speaking the language of open science</h2>
+<p>The tools and broader philosophy behind open science can help us bridge the research management divide. It involves a fundamental shift in how we approach the scientific process, both for your own internal workflows and how you can engage others in the process. By others, we mean not just researchers but specifically those that need the information to make informed decisions.</p>
+<p>Before we present a formal definition, let’s describe a modificaton of the conventional workflow that includes an open process to discovery and implementation <span class="citation">(Beck et al. <a href="#ref-Beck20" role="doc-biblioref">2020</a>; modified from Hampton et al. <a href="#ref-Hampton15" role="doc-biblioref">2015</a>)</span>.</p>
+<p><img src="img/open.png" width="100%" style="display: block; margin: auto;" /></p>
+<p>This workflow is similar to the original scientific method, but the technical components are open to managers and stakeholders, we’re treating data differently by using metadata and archiving, we’re creating summary documents that include source code with original, and we’re producting decision-support tools to meet the needs outside of the research community. More importantly, the process is <em>iterative</em> and not static.</p>
+<p>Throughout this workshop, we’ll learn about some open science tools that can be used in this generalized workflow to achieve better science in less time <span class="citation">(Lowndes et al. <a href="#ref-Lowndes17" role="doc-biblioref">2017</a>)</span>.</p>
+<p>Now let’s settle on a definition for open science (from Open Knowledge International, <a href="http://opendefinition.org/" class="uri">http://opendefinition.org/</a>, <a href="https://creativecommons.org/" class="uri">https://creativecommons.org/</a>):</p>
+<blockquote>
+<p>“The practice of science in such a way that others can <strong>collaborate</strong> and <strong>contribute</strong>, where research data, lab notes and other research processes are <strong>freely available</strong>, under terms that enable <strong>reuse</strong>, <strong>redistribution</strong> and <strong>reproduction</strong> of the research and its underlying data and methods.”</p>
+</blockquote>
+<p>Key words from this definition are highlighted in bold. There are very specific tools in the open science toolbox that speak to each of these key words. We’ll cover some of these later.</p>
+<p>From these key words, we can breakdown this definition into key principles.</p>
+<ol style="list-style-type: decimal">
+<li><p><strong>Open data</strong></p>
+<ul>
+<li>Public availability of data</li>
+<li>Resuability and transparent workflows</li>
+<li>Data provenance and metadat</li>
+</ul></li>
+<li><p><strong>Open process</strong></p>
+<ul>
+<li>Iterative methods using reproducible workflows</li>
+<li>Collaboration with colleagues using web-based tools</li>
+<li>Leveraging external, open-source applications</li>
+</ul></li>
+<li><p><strong>Open products</strong></p>
+<ul>
+<li>Interactive web products for communication</li>
+<li>Dynamic documents with source code</li>
+<li>Integration wiht external networks for discoverability</li>
+</ul></li>
+</ol>
+<p>You’ll notice that web-based tools and open science are often discussed at the same time. Science existed before the internet and open science often focuses on how the two can leverage and support one another despite the latter being a relatively new addition to society.</p>
+</div>
+<div id="the-fair-principles" class="section level2">
+<h2><span class="header-section-number">1.5</span> The FAIR principles</h2>
+<p>Advocates of open science also describe the use of the FAIR principles <span class="citation">(Wilkinson et al. <a href="#ref-Wilkinson16" role="doc-biblioref">2016</a>)</span> as a vehicle for achieving the former. It’s important to understand what they mean so that you can be fluent in both. The FAIR acronym is described as follows:</p>
+<ul>
+<li><strong>F</strong>indable: The data have a globally unique and persistent identifier, including use of “rich” metadata.</li>
+<li><strong>A</strong>ccessible: Once found, the data can be retrieved using standardized communications protocols that are open, free, and universally implementable.</li>
+<li><strong>I</strong>nteroperable: The ability of data or tools from non-cooperating resources to integrate or work together with minimal effort.</li>
+<li><strong>R</strong>eusable: If the above are achieved, the data and metadata are described in a way that they can be replicated and/or combined in different settings.</li>
+</ul>
+<p>Simply, what this means is: 1) each dataset has a name that doesn’t change and can be found with minimal effort using that name, 2) once it’s found, you can actually get your hands on it (e.g., not behind a paywall), 3) once you have it, you can use readily available tools to work with the data (e.g., not using proprietary software), and 4) you can actually apply the data for your own needs because it has sufficient context, including its reproduction, given the the first three principles are met.</p>
+<p>For our purposes, think of these ideas as general guidelines you can ask yourself when doing science. If you find that your work does not achieve FAIR status, then you’re probably not being as open as you could be. We’ll of course provide some tools to help you be FAIR and open.</p>
+</div>
+<div id="schools-of-thought" class="section level2">
+<h2><span class="header-section-number">1.6</span> Schools of thought</h2>
+<p>Finally, it’s useful to make a distinction of how different people may talk about open science. This can help you better navigate conversations and become an advocate for open science in your own right.</p>
+<p><span class="citation">Fecher and Friesike (<a href="#ref-Fecher14" role="doc-biblioref">2014</a>)</span> describe open science as five distinct schools of thought:</p>
+<p><img src="img/fiveschools.PNG" width="100%" style="display: block; margin: auto;" /></p>
+<p>These are of course only conceptual boxes and there’s considerable overlap across all schools when open science is used in practice. For our purposes, we’ll be talking about ideas and tools from the pragmatic, infrastructure, and democratic schools of the thought. The end goal is to provide you with the means to create more efficient and impactful science that can more readily be used by others in a collaborative setting.</p>
+
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-Beck20">
+<p>Beck, M. W., C. O’Hara nad J. S. S. Lowndes, R. D. Mazor, S. Theroux, D. J. Gillett, B. Lane, and G. Gearheart. 2020. “The Importance of Open Science for Biological Assessment of Aquatic Environments.” <em>PeerJ</em> 8: e9539. <a href="https://doi.org/https://doi.org/10.7717/peerj.9539">https://doi.org/https://doi.org/10.7717/peerj.9539</a>.</p>
+</div>
+<div id="ref-Fecher14">
+<p>Fecher, B., and S. Friesike. 2014. “Open Science: One Term, Five Schools of Thought.” In <em>Opening Science</em>, 17–47. Springer, Cham.</p>
+</div>
+<div id="ref-Hampton15">
+<p>Hampton, S. E., S. S. Anderson, S. C. Bagby, C. Gries, X. Han, E. M. Hart, M. B. Jones, et al. 2015. “The Tao of Open Science for Ecology.” <em>Ecosphere</em> 6 (7): 1–13. <a href="https://doi.org/10.1890/ES14-00402.1">https://doi.org/10.1890/ES14-00402.1</a>.</p>
+</div>
+<div id="ref-Lowndes17">
+<p>Lowndes, J. S. S., B. D. Best, C. Scarborough, J. C. Afflerbach, M. R. Frazier, C. C. O’Hara, N. Jiang, and B. S. Halpern. 2017. “Our Path to Better Science in Less Time Using Open Data Science Tools.” <em>Nature Ecology &amp; Evolution</em> 1 (0160): 1–7. <a href="https://doi.org/10.1038/s41559-017-0160">https://doi.org/10.1038/s41559-017-0160</a>.</p>
+</div>
+<div id="ref-Michener97">
+<p>Michener, W. K., J. W. Brunt, J. J. Helly, T. B. Kirchner, and S. G. Stafford. 1997. “Nongeospatial Metadata for the Ecological Sciences.” <em>Ecological Applications</em> 7 (1): 330–42. <a href="https://doi.org/https://doi.org/10.1890/1051-0761(1997)007%5B0330:NMFTES%5D2.0.CO;2">https://doi.org/https://doi.org/10.1890/1051-0761(1997)007[0330:NMFTES]2.0.CO;2</a>.</p>
+</div>
+<div id="ref-Wilkinson16">
+<p>Wilkinson, M. D., M. Dumontier, I. J. Aalbersberg, G. Appleton, M. Axton, A. Baak, N. Blomberg, et al. 2016. “The Fair Guiding Principles for Scientific Data Management and Stewardship.” <em>Scientific Data</em> 3 (160018). <a href="https://doi.org/10.1038/sdata.2016.18">https://doi.org/10.1038/sdata.2016.18</a>.</p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="collaborate.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
