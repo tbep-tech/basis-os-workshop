@@ -6,6 +6,7 @@ link-citations: yes
 bibliography: [refs.bib]
 github-repo: tbep-tech/cerf-os-workshop
 description: "This is a web page for the CERF 2021 Open Science Workshop"
+css: styles.css
 ---
 
 ```{r}
