@@ -31,7 +31,7 @@ By the end of this workshop, you should have a solid understanding of fundamenta
 
 ## Instructors{-}
 
-[Dr. Chris Anastasiou](mailto:chris.anastasiou@swfwmd.state.fl.us) is a Chief Environmental Scientist and the Springs Team Lead for the Southwest Florida Water Management District. He holds a Ph.D. in Marine Science from the University of South Florida and has been working in and around the springs of Florida for more than 25 years.
+[Dr. Chris Anastasiou](mailto:chris.anastasiou@swfwmd.state.fl.us) is a Chief Water Quality Scientist and the Seagrass Mapping Program Lead for the Southwest Florida Water Management District. He holds a Ph.D. in Marine Science from the University of South Florida and has been working in and around the springs of Florida for more than 25 years.
 
 [Dr. Marcus Beck](mailto:mbeck@tbep.org) is the Program Scientist for the Tampa Bay Estuary Program and is developing data analysis and visualization methods for Bay health indicators. He received his BS in Zoology from the University of Florida in 2007 and his MSc and PhD in Conservation Biology from the University of Minnesota in 2009 and 2013. Marcus has experience researching environmental indicators and developing open science products to support environmental decision-making. Marcus is also an avid software developer and creator of online dashboards that facilitate science communication.
 
