@@ -37,31 +37,31 @@ knitr::include_graphics('img/appscipro.png')
 
 Many scientists, especially early career researchers (my past self included), may assume that this is sufficient to affect change. We write the report, sent it out into the world, and move on to the next project. This is a common mentality:
 
-> "This 500-page report will answer all of their questions!"
+> # "This 500-page report will answer all of their questions!"
 
-From the other side, such as the manager or administor, the report may be received like this: 
+From the other side, such as the manager or policy-maker, the report may be received like this: 
 
-> "This 500-page report answers none of my questions!"
+> # "This 500-page report answers none of my questions!"
 
 It's dense, inaccessible, and there are probably questions about the underlying data and methods used to achieve the results.  More importantly, it doesn't present the information in an easily digestible format to quickly make the right decision.  Sometimes, if you think you're doing applied science, it may just be implied science that falls short of application.
 
 __Why is this conventional approach to science ineffective at seeding change?__
 
-As I'm sure we're aware, the environmental management community is often siloed with each branch doing their own thing and speaking their own languages.  Between the research (and often academic) and management community, we call this the research-management divide. 
+As I'm sure we're aware, the environmental management community is often siloed with each branch doing their own thing and speaking their own languages.  Between the research (typically academic) and management community, we call this the research-management divide. 
 
 ```{r}
 knitr::include_graphics('img/divide2.png')
 ```
 
-A distinct barrier exists between how scientific products are developed and how they fail to meet management needs. This is often the result of communication barriers, irreproducible results, information loss with irreproducible results, inaccessible data, and opaque workflows. 
+A distinct barrier exists between how scientific products are developed and how they fail to meet management needs. This is often the result of communication barriers, irreproducible results, information loss with poor documentation, inaccessible data, and opaque workflows known only to the analyst. 
 
-These barriers often begin at the publication level of research.  This compelling graphic from @Michener97 describes the atrophy of information in a closed approach to creating science.
+These barriers can occur at any stage of the research process.  This compelling graphic from @Michener97 describes the atrophy of information in a closed approach to creating science.
 
 ```{r}
 knitr::include_graphics('img/michener.png')
 ```
 
-So how do we make changes to our workflows to ensure we can achieve truly applied science? 
+So how do we make changes to our workflows to ensure we can achieve truly applied science using open tools and philosophies? 
 
 ## Learning and speaking the language of open science
 
@@ -79,7 +79,7 @@ Throughout this workshop, we'll learn about some open science tools that can be 
 
 Now let's settle on a definition for open science (from Open Knowledge International, http://opendefinition.org/, https://creativecommons.org/):
 
-> "The practice of science in such a way that others can __collaborate__ and __contribute__, where research data, lab notes and other research processes are __freely available__, under terms that enable __reuse__, __redistribution__ and __reproduction__ of the research and its underlying data and methods."
+> # "The practice of science in such a way that others can __collaborate__ and __contribute__, where research data, lab notes and other research processes are __freely available__, under terms that enable __reuse__, __redistribution__ and __reproduction__ of the research and its underlying data and methods."
 
 Key words from this definition are highlighted in bold.  There are very specific tools in the open science toolbox that speak to each of these key words.  We'll cover some of these later. 
 
@@ -89,7 +89,7 @@ From these key words, we can breakdown this definition into key principles.
      
      * Public availability of data
      * Resuability and transparent workflows
-     * Data provenance and metadat
+     * Data provenance and metadata
      
 1. __Open process__
 
@@ -103,7 +103,7 @@ From these key words, we can breakdown this definition into key principles.
      * Dynamic documents with source code 
      * Integration wiht external networks for discoverability
 
-You'll notice that web-based tools and open science are often discussed at the same time.  Science existed before the internet and open science often focuses on how the two can leverage and support one another despite the latter being a relatively new addition to society.  
+You'll notice that web-based tools and open science are often discussed at the same time.  Science existed before the internet and open science often focuses on how the two can leverage and support one another despite the latter being a relatively new addition to society.  People often describe web-based tools as synonymous with open science.
 
 ## The FAIR principles
 
@@ -122,7 +122,7 @@ For our purposes, think of these ideas as general guidelines you can ask yoursel
 
 Finally, it's useful to make a distinction of how different people may talk about open science. This can help you better navigate conversations and become an advocate for open science in your own right. 
 
-@Fecher14 describe open science as five distinct schools of thought: 
+A useful paradigm is provided by @Fecher14 to describe open science as five distinct schools of thought: 
 
 ```{r}
 knitr::include_graphics('img/fiveschools.PNG')
