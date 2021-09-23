@@ -6,5 +6,13 @@ learning-and-speaking-the-language-of-open-science
 the-fair-principles
 schools-of-thought
 collaborate
+lesson-outline-1
+goals-and-motivation-1
+essential-elements-of-collaboration
+exercise
+tools-for-collaboration
+watch-and-learn
+exercise-1
+balancing-and-managing-expectations
 impact
 implement
