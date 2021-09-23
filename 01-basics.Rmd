@@ -2,6 +2,8 @@
 
 ```{r, echo = F}
 knitr::opts_chunk$set(echo = F, fig.align = 'center', out.width = '100%')
+
+library(fontawesome)
 ```
 
 ## Lesson Outline
@@ -29,13 +31,13 @@ knitr::include_graphics('img/scipro.png')
 
 Our basic scientific approach to discovery is motivated by a question or research goal, developing a hypothesis for the question, collecting data based on the hypothesis, developing a tool that can be used for decision-making, and summarizing the results in a conventional format. 
 
-If you're attempting applied science, your workflow may look something like this.  
+In a little more detail, your workflow may look something like this.  
 
 ```{r}
 knitr::include_graphics('img/appscipro.png')
 ```
 
-Many scientists, especially early career researchers (my past self included), may assume that this is sufficient to affect change. We write the report, sent it out into the world, and move on to the next project. This is a common mentality:
+Many scientists, especially early career researchers (my past self included), may assume that this is sufficient to affect change. We write the report, send it out into the world, and move on to the next project. This is a common mentality:
 
 > "This 500-page report will answer all of their questions!"
 
@@ -59,6 +61,12 @@ These barriers can occur at any stage of the research process.  This compelling 
 
 ```{r}
 knitr::include_graphics('img/michener.png')
+```
+
+The last part is especially morbid.  Sometimes, this is called "the bus factor".  What would happen to your important work and life achievements if you were hit by a bus? Would others be able to pick it up?  Research products with a high bus factor are at risk of being lost if critical team members are no long available. This is obviously a risk and real problem.
+
+```{r, out.width = '80%'}
+knitr::include_graphics('img/overlyhonest.png')
 ```
 
 So how do we make changes to our workflows to ensure we can achieve truly applied science using open tools and philosophies? 
@@ -85,23 +93,24 @@ Key words from this definition are highlighted in bold.  There are very specific
 
 From these key words, we can breakdown this definition into key principles.
 
-1. __Open data__
+1. `r fa('table')` __Open data__
      
      * Public availability of data
      * Resuability and transparent workflows
      * Data provenance and metadata
-     
-1. __Open process__
+<br></br>    
+1. `r fa('cogs')` __Open process__
 
      * Iterative methods using reproducible workflows
      * Collaboration with colleagues using web-based tools
      * Leveraging external, open-source applications
-
-1. __Open products__
+<br></br>   
+1. `r fa('book')` __Open products__
 
      * Interactive web products for communication
      * Dynamic documents with source code 
      * Integration wiht external networks for discoverability
+<br></br>   
 
 You'll notice that web-based tools and open science are often discussed at the same time.  Science existed before the internet and open science often focuses on how the two can leverage and support one another despite the latter being a relatively new addition to society.  People often describe web-based tools as synonymous with open science.
 
