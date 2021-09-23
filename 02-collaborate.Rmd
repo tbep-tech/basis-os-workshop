@@ -1,11 +1,45 @@
 # Open Science for collaboration {#collaborate}
 
-What is the expectation and how is it managed???
+```{r, echo = F}
+knitr::opts_chunk$set(echo = F, fig.align = 'center', out.width = '100%')
 
-* Essential elements of collaboration (version control, workflow management, data repositories)
+library(fontawesome)
+```
 
-* Tools for collaboration (Slack, Trello, Google Docs, GitHub, etc.)
+## Lesson Outline
 
-* Exercise idea 1: in small groups, setup a shared workspace using one of the collaborative platforms 
+* [Goals and motivation]
+* [Essential elements of collaboration]
+* [Tools for collaboration]
+* [Balancing and managing expectations]
 
-* Exercise idea 2: Develop a code of conduct for your group in a shared workspace
+## Goals and motivation
+
+This is the second module in our four hour workshop on open science.  This module will explore some open science tools to help you and your team become better collaborators and to better engage your science with external partners.  We'll introduce some essential elements of collaboration and discuss some readily available tools for doing so.  We'll close with a discussion on balancing and managing expectations for collaboration in the rapidly evolsing online arena.
+
+* __Goal__: understand modalities of collaboration and the pros/cons of various tools
+* __Motivation__: Expand your toolbox with efficient and 
+
+## Essential elements of collaboration
+
+version control, workflow management, data repositories
+
+Code of Conduct
+
+### `r fa('hat-wizard')` Exercise
+
+Develop a code of conduct for your group in a shared workspace
+
+## Tools for collaboration
+
+Slack, Trello, Google Docs, Microsoft 360, GitHub, etc.
+
+### `r fa('chalkboard-teacher')` Watch and learn
+
+### `r fa('hat-wizard')` Exercise
+
+In small groups, setup a shared workspace using one of the collaborative platforms 
+
+## Balancing and managing expectations
+
+
