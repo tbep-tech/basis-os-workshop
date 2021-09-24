@@ -1,6 +1,6 @@
 # Basics of open science {#basics}
 
-```{r, echo = F}
+```{r, echo = F, warning = F, message = F}
 knitr::opts_chunk$set(echo = F, fig.align = 'center', out.width = '100%')
 
 library(fontawesome)
@@ -63,7 +63,7 @@ These barriers can occur at any stage of the research process.  This compelling 
 knitr::include_graphics('img/michener.png')
 ```
 
-The last part is especially morbid.  Sometimes, this is called "the bus factor".  What would happen to your important work and life achievements if you were hit by a bus? Would others be able to pick it up?  Research products with a high bus factor are at risk of being lost if critical team members are no long available. This is obviously a risk and real problem.
+The last part is especially morbid.  Sometimes, this is called the "bus factor".  What would happen to your important work and life achievements if you were hit by a bus? Would others be able to pick it up?  Research products with a high bus factor are at risk of being lost if critical team members are no longer available. This is obviously a risk and real problem.
 
 ```{r, out.width = '80%'}
 knitr::include_graphics('img/overlyhonest.png')
@@ -75,13 +75,13 @@ So how do we make changes to our workflows to ensure we can achieve truly applie
 
 The tools and broader philosophy behind open science can help us bridge the research management divide. It involves a fundamental shift in how we approach the scientific process, both for your own internal workflows and how you can engage others in the process. By others, we mean not just researchers but specifically those that need the information to make informed decisions. 
 
-Before we present a formal definition, let's describe a modificaton of the conventional workflow that includes an open process to discovery and implementation [@Beck20; modified from @Hampton15]. 
+Before we present a formal definition, let's describe a modification of the conventional workflow that includes an open process to discovery and implementation [@Beck20; modified from @Hampton15]. 
 
 ```{r}
 knitr::include_graphics('img/open.png')
 ```
 
-This workflow is similar to the original scientific method, but the technical components are open to managers and stakeholders, we're treating data differently by using metadata and archiving, we're creating summary documents that include source code with original, and we're producting decision-support tools to meet the needs outside of the research community.  More importantly, the process is *iterative* and not static. 
+This workflow is similar to the original scientific method, but the technical components are open to managers and stakeholders, we're treating data differently by using metadata and archiving, we're creating summary documents that include source code with original, and we're producing decision-support tools to meet the needs outside of the research community.  More importantly, the process is *iterative* and not static. 
 
 Throughout this workshop, we'll learn about some open science tools that can be used in this generalized workflow to achieve better science in less time [@Lowndes17].
 
@@ -96,7 +96,7 @@ From these key words, we can breakdown this definition into key principles.
 1. `r fa('table')` __Open data__
      
      * Public availability of data
-     * Resuability and transparent workflows
+     * Reusability and transparent workflows
      * Data provenance and metadata
 <br></br>    
 1. `r fa('cogs')` __Open process__
@@ -109,7 +109,7 @@ From these key words, we can breakdown this definition into key principles.
 
      * Interactive web products for communication
      * Dynamic documents with source code 
-     * Integration wiht external networks for discoverability
+     * Integration with external networks for discoverability
 <br></br>   
 
 You'll notice that web-based tools and open science are often discussed at the same time.  Science existed before the internet and open science often focuses on how the two can leverage and support one another despite the latter being a relatively new addition to society.  People often describe web-based tools as synonymous with open science.

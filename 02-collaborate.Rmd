@@ -22,23 +22,23 @@ This is the second module in our four hour workshop on open science.  This modul
 
 ## Essential elements of collaboration
 
-We start our deep dive into open science by focusing on collaboration as the single most important activity that can be enhanced through transparent, efficient, and reproducible tools.  Having effective tools to work together is a critical theme of many open science practices.  There are many tools in the toolbox and we need to introduce some core concepts before we show by doing.  
+We start our deep dive into open science by focusing on collaboration as the single most important activity that can be enhanced through transparent, efficient, and reproducible tools.  Having effective tools to work together is a critical theme of many open science practices.  There are many tools in the toolbox and we need to introduce some core concepts before we demonstrate how to implement them in practice.
 
 ### Workflow management
 
 How do you organize your work each day?  How do you make sure pressing deadlines are met on schedule? How do you plan for short-term and long-term goals?  Do you have a five-year, ten-year, or longer career plan? 
 
-Work to achieve goals cannot be accomplished without a systematic approach to organizing tasks.  Chances are, we each have our own system that works for us based on our obligations as career scientists.  Most people have what works for them and this can come in conflict when we try to mesh internal workflows with those of others.  
+Work to achieve goals cannot be accomplished without a systematic approach to organizing tasks.  Chances are, we each have our own system that works for us that was developed through trial and error.  Although everyone has familiar workflows, they are often idiosyncratic and deeply entrenched by habit.  That can be in direct conflict with collaboration when we try to mesh internal workflows with those of others.  
 
 Does this look familiar?  
 
 ```{r, out.width = '50%'}
-knitr::include_graphics('img/filehell.png')
+knitr::include_graphics('img/old_files.png')
 ```
 
-Although the above comic from [xkcd](https://xkcd.com/) speaks directly to file structures, it hints at a broader problem of personal information management that can seriously complicate working with others. I'm sure we've all been in the scenario of endless email attachments with changing names.  
+Although the above comic from [xkcd](https://xkcd.com/) speaks directly to file management, it hints at a broader problem of personal information management that can seriously complicate working with others. I'm sure we've all struggled to find that one file for that one project from a vague recollection of seeing it a few months ago.
 
-More generally, collaborative work can be facilitated through workflow management.  We'll discuss some specific software tools for strict version control, but we can talk broadly about internet-based tools to facilitate workflows either for yourself or, better yet, working with others. These can help propel you towards open science.
+Collaborative work can be facilitated through workflow management that helps you break out of old habits.  We'll introduce some specific internet-based tools below to facilitate workflows either for yourself or, better yet, working with others. These can help propel you towards open science.
 
 Here, we introduce the Kanban approach to workflow management. The idea is simple.  Create a task-oriented workflow of card management organized by progress. It looks something like this: 
 
@@ -56,36 +56,49 @@ Many of the open science tools we describe below use this system. It is a genera
 
 ### Version control 
 
-Our file naming example above represents a specific problem stemming from insufficient rules to organize information.  Workflows can greatly be enhanced by tools that use strict guidelines for tracking changes and allowing a complete view of the evolution of a project.  This is where version control comes in. 
+A specific problem for workflow management that can be solved by open science tools is file management. Workflows can greatly be enhanced by tools that use strict guidelines for tracking changes and allowing a complete view of the evolution of a project.  This is where version control comes in. 
+
+I'm sure many of you have fallen into this trap: 
+
+```{r, out.width = '50%'}
+knitr::include_graphics('img/filehell.png')
+```
 
 Version control is a way to track the development history of a project. It serves the joint purposes of: 
 
 1. Formally documenting the changes that have been made to code or software
-1. making sure that the development history is permanent. 
+1. Making sure that the development history is permanent
+1. Providing a system for collaborating across platforms (with friends!)
 
-It's more than saving files. Documenting changes provides a transparent record for yourself and others, and establishing permanency ensures that any of the changes that are made can be vetted and accessed as needed. Think of it as an insurance plan for your project.
+It's more than saving files. Documenting changes with a set of commands that follow strict rules provides a transparent record for yourself and others, and establishing permanency ensures that any of the changes that are made can be vetted and accessed as needed. Think of it as an insurance plan for your project.
 
-By far, the most widely use software for version control is Git.  Although we do not cover the specifics of this software, it's useful to understand it's purpose and what it can do in making your work more open and impactful. Git is integrated with many popular open source development platforms, such as RStudio. 
+By far, the most widely use software for version control is [Git](https://git-scm.com/).  Although we do not cover the specifics of this software, it's useful to understand the purpose and what it can do in making your work more open and impactful. Git is integrated with many popular open source development platforms, such as [RStudio](https://support.rstudio.com/hc/en-us/articles/200532077-Version-Control-with-Git-and-SVN). 
 
-```{r, out.width = '60%'}
-knitr::include_graphics('img/gitxkcd.png')
-```
+Many people often confuse Git with [GitHub](https://www.github.com). GitHub is an online platform for working collaboratively through Git AND it allows you to be open with your work. We'll provide some examples below of how this can be done.  Importantly, you do not need to be an expert in Git to be able to use GitHub.  This speaks volumes for how team efficiency can be improved through better collaboration. 
 
-Many people often confuse Git with GitHub. GitHub is an online platform for working collaboratively through Git. We'll provide some examples below of how this can be done.  Importantly, you do not need to be an expert in Git to be able to use GitHub.  This speaks volumes for how team efficiency can be improved through better collaboration. 
+<h3>`r fa('chalkboard-teacher')` Watch and learn</h3>
+
+Now we'll demonstrate how to setup a version control project with RStudio, Git, and GitHub.
 
 ### Data repositories
 
-How data are treated as living, dynamic pieces of information is critical to the whole ethos of open science. This is especially true when the [FAIR](#fair) principles are invoked.  Data should not live on your hardrive as something only known to yourself. 
+How data are treated as living, dynamic pieces of information is critical to the whole ethos of open science. This is especially true when the [FAIR](#fair) principles are invoked.  Data should not live on your hard drive as something only known to yourself. 
 
-Although we will not cover data repositories in depth, it's important to recognize the critical role that data archiving and metadata have in open science.  How many times have you thought "wow, it would be great if I could have the data from this paper!" Making data open is a great way to propel science through better and kinder collaboration.  
+Although we will not cover data repositories in depth, it's important to recognize the critical role that data archiving and metadata have in open science.  How many times have you thought "wow, it would be great if I could have the data from this paper!" Making data open is a great way to propel science through better collaboration.  
 
-In most cases, getting a dataset online is straightforward but the ease of doing so depends on where you want to put the data. In all cases, your dataset should be tidy and accompanied by metadata.  For simple solutions, such as FTP hosting or putting a dataset on Google Drive, all you need to do is upload the data by hand. This doesn't necessarily make it findable.  
+The ease of getting a dataset online depends on where you want to put the data. In all cases, your dataset should be tidy and accompanied by metadata.  For simple solutions, such as FTP hosting or putting a dataset on Google Drive, all you need to do is upload the data by hand. However, this doesn't necessarily make it findable and the permanency is uncertain.  
 
 The absolute best standard for hosting data online is through a __Federated Data Repository__:
 
 > An online network of connected repositories that use similar standards to collectively store data for discovery and access. Uploading a dataset to one node of a repository will make it available through all other nodes.
 
-Such repositories follow strict, but necessary guidelines, to ensure your data live forever, so long as the internet exists. The data are definitely findable (e.g., through a web search), accessible (free to download), and interoperable (accepted standards are ensured).  The "reproducible" aspect can be debatable, but that can be solved through other means (e.g., code sharing).
+Such repositories follow strict, but necessary guidelines, to ensure your data live forever so long as the internet exists. The data are definitely findable (e.g., through a web search), accessible (free to download), and interoperable (accepted standards are ensured).  The "reproducible" aspect can be debatable, but that can be solved through other means (e.g., code sharing).
+
+Some examples of data repositories, most are domain-specific:
+
+* [KNB](https://knb.ecoinformatics.org/): Knowledge Network for Biocomplexity, a general purpose repository for ecological data
+* [HydroShare](https://www.hydroshare.org/): Data and models used in hydrology
+* [OPC](https://opc.dataone.org/data): California Ocean Protection Council, marine and coastal datasets
 
 ### Code of Conduct
 
@@ -95,7 +108,7 @@ Here's a great example from our friends at [openscapes](https://www.openscapes.o
 
 The goal of every code of conduct is to ensure an agreed upon set of standards are used by all team members to help create a safe and positive experience. 
 
-### `r fa('hat-wizard')` Exercise
+<h3>`r fa('hat-wizard')` Exercise</h3>
 
 Develop a code of conduct for your group in a shared workspace.  Items to consider:
 
@@ -105,14 +118,117 @@ Develop a code of conduct for your group in a shared workspace.  Items to consid
 
 ## Tools for collaboration
 
-Slack, Trello, Google Docs, Microsoft 360, GitHub, etc.
+Now we introduce some specific web-based that you can use to improve collaboration and openness.  We present them as a suite of options to consider based on the pros and cons associated with each tool. This is by no means a comprehensive list, but it should get you started towards better collaboration.
 
-### `r fa('chalkboard-teacher')` Watch and learn
+### Slack
 
-### `r fa('hat-wizard')` Exercise
+```{r, fig.align = 'left', out.width = '15%'}
+knitr::include_graphics('img/slack-logo-icon.png')
+```
+https://slack.com/
 
-In small groups, setup a shared workspace using one of the collaborative platforms 
+<h4>`r fa('question')` What</h4>
+
+An online messaging platform for internal communication. Organize conversations by topic, including direct messages to one or more team members.  Can have multiple workspaces for different groups.
+
+<h4>`r fa('thumbs-up')` Pros</h4>
+
+Alleviate email overload through quick, informal communication.
+
+<h4>`r fa('thumbs-down')` Cons</h4>
+
+Yet another thing to monitor.  Free subscription limits archive of communications.
+
+### Trello
+
+```{r, fig.align = 'left', out.width = '15%'}
+knitr::include_graphics('img/trello.png')
+```
+https://trello.com/
+
+<h4>`r fa('question')` What</h4>
+
+A Kanban style workflow organization platform.  Can be used for personal organization or in teams. 
+
+<h4>`r fa('thumbs-up')` Pros</h4>
+
+Easy to use and can upgrade with "power-ups" for integration with other services (e.g., Google). 
+
+<h4>`r fa('thumbs-down')` Cons</h4>
+
+Only visible to yourself or those you explicitly invite.  Free version is limited.
+
+### Google Drive
+
+```{r, fig.align = 'left', out.width = '15%'}
+knitr::include_graphics('img/Google_Drive_logo.png')
+```
+https://google.com/drive
+
+<h4>`r fa('question')` What</h4>
+
+Cloud-based Platform for sharing documents, sheets, slides, etc. Requires a Google username. 
+
+<h4>`r fa('thumbs-up')` Pros</h4>
+
+Easy to use and can be a very open space for collaboration. Fairly interoperable with different file formats.   
+
+<h4>`r fa('thumbs-down')` Cons</h4>
+
+Access can be tricky depending on institution.  Who knows what Google is doing with your data. 
+
+### Office 365
+
+```{r, fig.align = 'left', out.width = '25%'}
+knitr::include_graphics('img/office365.png')
+```
+https://google.com/drive
+
+<h4>`r fa('question')` What</h4>
+
+Cloud-based Platform for sharing documents, sheets, slides, etc. Requires a Microsoft account. 
+
+<h4>`r fa('thumbs-up')` Pros</h4>
+
+Easy to use and fully supports Microsoft products.
+
+<h4>`r fa('thumbs-down')` Cons</h4>
+
+Access can be tricky depending on institution. Maintains dependency on Microsoft products that don't facilitate reproducibility. 
+
+### GitHub
+
+```{r, fig.align = 'left', out.width = '25%'}
+knitr::include_graphics('img/Octocat.png')
+```
+https://github.com
+
+<h4>`r fa('question')` What</h4>
+
+Cloud-based Platform for sharing code with Git version control. Supports sharing of most file types, although code and text-based files are the primary use.
+
+<h4>`r fa('thumbs-up')` Pros</h4>
+
+Collaborative and fully transparent work environment for files under version control. Supports workflow management through issue tracking and Kanban style project boards. Octocat mascot is super cute. 
+
+<h4>`r fa('thumbs-down')` Cons</h4>
+
+Learning curve is steep if you want to fully leverage version control. Not a formal data archival service and file sizes are limited.
+
+<h3>`r fa('chalkboard-teacher')` Watch and learn</h3>
+
+Setting up a project management system with GitHub.
+
+<h3>`r fa('hat-wizard')` Exercise</h3>
+
+In small groups, setup a shared workspace using one of the collaborative platforms. 
 
 ## Balancing and managing expectations
 
+Adopting new workflows and tools to facilitate collaboration are steps in the right direction for open science.  Clearly, change from established norms and practices is not easy.  It's important to develop a realistic expectation of how this change may play out in the wild. 
 
+First, realize that these changes are not going to happen overnight.  Breaking free of entrenched workflows is like quitting bad habits.  It's not easy because they're comfortable, familiar, and often habitual. Start small and work gradually towards adopting new ideas. Incremental progress is the name of the game.
+
+Getting others on board is another serious challenge.  The sources of frustration you might have at the personal level apply to anyone else working in your team.  Even more so, institutional roadblocks may exist. New software can raise red flags for IT support staff. It's important to work with them to develop trust for the software.
+
+Finally, the tools above are temporary.  The single constant in open science is change.  Use the tools with full realization that they may be appropriate for now, but something (hopefully) better will replace it in the future.   
