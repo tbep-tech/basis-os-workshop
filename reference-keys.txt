@@ -3,12 +3,16 @@ lesson-outline
 goals-and-motivation
 why-open-science
 learning-and-speaking-the-language-of-open-science
-the-fair-principles
+fair
 schools-of-thought
 collaborate
 lesson-outline-1
 goals-and-motivation-1
 essential-elements-of-collaboration
+workflow-management
+version-control
+data-repositories
+code-of-conduct
 exercise
 tools-for-collaboration
 watch-and-learn
