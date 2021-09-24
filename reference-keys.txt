@@ -13,10 +13,12 @@ workflow-management
 version-control
 data-repositories
 code-of-conduct
-exercise
 tools-for-collaboration
-watch-and-learn
-exercise-1
+slack
+trello
+google-drive
+office-365
+github
 balancing-and-managing-expectations
 impact
 implement
