@@ -114,7 +114,7 @@ From these key words, we can breakdown this definition into key principles.
 
 You'll notice that web-based tools and open science are often discussed at the same time.  Science existed before the internet and open science often focuses on how the two can leverage and support one another despite the latter being a relatively new addition to society.  People often describe web-based tools as synonymous with open science.
 
-## The FAIR principles
+## The FAIR principles {#fair}
 
 Advocates of open science also describe the use of the FAIR principles [@Wilkinson16] as a vehicle for achieving the former.  It's important to understand what they mean so that you can be fluent in both. The FAIR acronym is described as follows:
 
