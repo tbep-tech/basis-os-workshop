@@ -17,7 +17,7 @@ library(fontawesome)
 
 This is the second module in our four hour workshop on open science.  This module will explore some open science tools to help you and your team become better collaborators and to better engage your science with external partners.  We'll introduce some essential elements of collaboration and discuss some readily available tools for doing so.  We'll close with a discussion on balancing and managing expectations for collaboration in the rapidly evolving online arena.
 
-* __Goal__: understand modalities of collaboration and the pros/cons of various tools
+* __Goal__: understand methods of collaboration and the pros/cons of various tools
 * __Motivation__: start building the tools for your open science toolbox
 
 ## Essential elements of collaboration
@@ -40,7 +40,7 @@ Although the above comic from [xkcd](https://xkcd.com/) speaks directly to file 
 
 Collaborative work can be facilitated through workflow management that helps you break out of old habits.  We'll introduce some specific internet-based tools below to facilitate workflows either for yourself or, better yet, working with others. These can help propel you towards open science.
 
-Here, we introduce the Kanban approach to workflow management. The idea is simple.  Create a task-oriented workflow of card management organized by progress. It looks something like this: 
+Here, we introduce the [Kanban](https://en.wikipedia.org/wiki/Kanban_(development) approach to workflow management. The idea is simple.  Create a task-oriented workflow of card management organized by progress. It looks something like this: 
 
 ```{r, out.width = '60%'}
 knitr::include_graphics('img/kanban.jpg')
@@ -102,11 +102,11 @@ Some examples of data repositories, most are domain-specific:
 
 ### Code of Conduct
 
-Every great collaborative team does not begin work before a Code of Conduct is created.  This documents a set of community standards within which the work can be completed.  It ensures all viewpoints are heard and respected and establishes a means by which conflicts can be resolved.  
+Every great collaborative team does not begin work before a Code of Conduct is created.  This documents a set of community and social standards within which the work can be completed.  It ensures all viewpoints are heard and respected and establishes a means by which conflicts can be resolved.  
 
 Here's a great example from our friends at [openscapes](https://www.openscapes.org/code-of-conduct/).
 
-The goal of every code of conduct is to ensure an agreed upon set of standards are used by all team members to help create a safe and positive experience. 
+The goal of every code of conduct is to ensure an agreed upon set of norms are used by all team members to help create a safe and positive experience. 
 
 <h3>`r fa('hat-wizard')` Exercise</h3>
 
@@ -118,7 +118,7 @@ Develop a code of conduct for your group in a shared workspace.  Items to consid
 
 ## Tools for collaboration
 
-Now we introduce some specific web-based that you can use to improve collaboration and openness.  We present them as a suite of options to consider based on the pros and cons associated with each tool. This is by no means a comprehensive list, but it should get you started towards better collaboration.
+Now we introduce some specific web-based tools that you can use to improve collaboration and openness.  We present them as a suite of options to consider based on the pros and cons associated with each tool. This is by no means a comprehensive list, but it should get you started towards better collaboration to leverage open science.
 
 ### Slack
 
@@ -129,15 +129,15 @@ https://slack.com/
 
 <h4>`r fa('question')` What</h4>
 
-An online messaging platform for internal communication. Organize conversations by topic, including direct messages to one or more team members.  Can have multiple workspaces for different groups.
+An online messaging platform for internal communication. Conversations can be organized by topic (via channels) or you can send direct messages to one or more team members.  You can have multiple workspaces for different groups.
 
 <h4>`r fa('thumbs-up')` Pros</h4>
 
-Alleviate email overload through quick, informal communication.
+Alleviate email overload through quick, informal messaging.  Offers a fresh approach to online communication.
 
 <h4>`r fa('thumbs-down')` Cons</h4>
 
-Yet another thing to monitor.  Free subscription limits archive of communications.
+Yet another thing to monitor.  Free subscription limits archive of messages.  Communication is limited to only those individuals in a workspace.
 
 ### Trello
 
@@ -167,11 +167,11 @@ https://google.com/drive
 
 <h4>`r fa('question')` What</h4>
 
-Cloud-based Platform for sharing documents, sheets, slides, etc. Requires a Google username. 
+Cloud-based Platform for sharing documents, worksheets, slides, etc. Requires a Google username. 
 
 <h4>`r fa('thumbs-up')` Pros</h4>
 
-Easy to use and can be a very open space for collaboration. Fairly interoperable with different file formats.   
+Easy to use and can be a very open space for collaboration. Fairly interoperable with different file formats.  Some functionality with version control (i.e., ability to "roll-back" to previous versions and to view changes).    
 
 <h4>`r fa('thumbs-down')` Cons</h4>
 
@@ -186,7 +186,7 @@ https://google.com/drive
 
 <h4>`r fa('question')` What</h4>
 
-Cloud-based Platform for sharing documents, sheets, slides, etc. Requires a Microsoft account. 
+Cloud-based Platform for sharing Microsoft documents, worksheets, slides, etc. Requires a Microsoft account. 
 
 <h4>`r fa('thumbs-up')` Pros</h4>
 
@@ -194,7 +194,7 @@ Easy to use and fully supports Microsoft products.
 
 <h4>`r fa('thumbs-down')` Cons</h4>
 
-Access can be tricky depending on institution. Maintains dependency on Microsoft products that don't facilitate reproducibility. 
+Access can be tricky depending on institution. Maintains dependency on expensive Microsoft products that don't facilitate reproducibility. 
 
 ### GitHub
 
@@ -229,6 +229,6 @@ Adopting new workflows and tools to facilitate collaboration are steps in the ri
 
 First, realize that these changes are not going to happen overnight.  Breaking free of entrenched workflows is like quitting bad habits.  It's not easy because they're comfortable, familiar, and often habitual. Start small and work gradually towards adopting new ideas. Incremental progress is the name of the game.
 
-Getting others on board is another serious challenge.  The sources of frustration you might have at the personal level apply to anyone else working in your team.  Even more so, institutional roadblocks may exist. New software can raise red flags for IT support staff. It's important to work with them to develop trust for the software.
+Getting others on board is another serious challenge.  The sources of frustration you might have at the personal level apply to anyone else working in your team.  Even more so, institutional roadblocks may exist. New software can raise red flags for IT support staff. It's important to work with them to develop trust for the software and an accepted process for installation.
 
 Finally, the tools above are temporary.  The single constant in open science is change.  Use the tools with full realization that they may be appropriate for now, but something (hopefully) better will replace it in the future.   
