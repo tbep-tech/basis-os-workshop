@@ -40,7 +40,7 @@ Although the above comic from [xkcd](https://xkcd.com/) speaks directly to file 
 
 Collaborative work can be facilitated through workflow management that helps you break out of old habits.  We'll introduce some specific internet-based tools below to facilitate workflows either for yourself or, better yet, working with others. These can help propel you towards open science.
 
-Here, we introduce the [Kanban](https://en.wikipedia.org/wiki/Kanban_(development) approach to workflow management. The idea is simple.  Create a task-oriented workflow of card management organized by progress. It looks something like this: 
+Here, we introduce the [Kanban](https://en.wikipedia.org/wiki/Kanban_(development)) approach to workflow management. The idea is simple.  Create a task-oriented workflow of card management organized by progress. It looks something like this: 
 
 ```{r, out.width = '60%'}
 knitr::include_graphics('img/kanban.jpg')
