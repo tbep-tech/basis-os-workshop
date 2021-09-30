@@ -165,7 +165,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="2.5" data-path="collaborate.html"><a href="collaborate.html#balancing-and-managing-expectations"><i class="fa fa-check"></i><b>2.5</b> Balancing and managing expectations</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="impact.html"><a href="impact.html"><i class="fa fa-check"></i><b>3</b> Open science for impactful products</a></li>
+<li class="chapter" data-level="3" data-path="impact.html"><a href="impact.html"><i class="fa fa-check"></i><b>3</b> Open science for impactful products</a><ul>
+<li class="chapter" data-level="3.1" data-path="impact.html"><a href="impact.html#lesson-outline-2"><i class="fa fa-check"></i><b>3.1</b> Lesson Outline</a></li>
+<li class="chapter" data-level="3.2" data-path="impact.html"><a href="impact.html#goals-and-motivation-2"><i class="fa fa-check"></i><b>3.2</b> Goals and motivation</a></li>
+<li class="chapter" data-level="3.3" data-path="impact.html"><a href="impact.html#data-as-the-foundation-for-open-science"><i class="fa fa-check"></i><b>3.3</b> Data as the foundation for open science</a></li>
+<li class="chapter" data-level="3.4" data-path="impact.html"><a href="impact.html#principles-of-tidy-data"><i class="fa fa-check"></i><b>3.4</b> Principles of tidy data</a></li>
+<li class="chapter" data-level="3.5" data-path="impact.html"><a href="impact.html#importance-of-metadata"><i class="fa fa-check"></i><b>3.5</b> Importance of metadata</a></li>
+</ul></li>
 <li class="chapter" data-level="4" data-path="implement.html"><a href="implement.html"><i class="fa fa-check"></i><b>4</b> Lowering barriers to inclusion and addressing key critiques</a></li>
 <li class="chapter" data-level="" data-path="resources-for-continued-learning.html"><a href="resources-for-continued-learning.html"><i class="fa fa-check"></i>Resources for continued learning</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
@@ -190,17 +196,91 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="impact" class="section level1">
 <h1><span class="header-section-number">3</span> Open science for impactful products</h1>
+<div id="lesson-outline-2" class="section level2">
+<h2><span class="header-section-number">3.1</span> Lesson Outline</h2>
 <ul>
-<li><p>Data are foundation of research that can inform management decisions, how these date are curated and delivered can make/break the impact of a project, OS principles can help</p></li>
-<li><p>What are tidy data?</p></li>
-<li><p>What is a data dictionary</p></li>
+<li><a href="impact.html#goals-and-motivation-2">Goals and motivation</a></li>
+<li><a href="impact.html#data-as-the-foundation-for-open-science">Data as the foundation for open science</a></li>
+<li><a href="impact.html#principles-of-tidy-data">Principles of tidy data</a></li>
+<li><a href="impact.html#importance-of-metadata">Importance of metadata</a></li>
+</ul>
+</div>
+<div id="goals-and-motivation-2" class="section level2">
+<h2><span class="header-section-number">3.2</span> Goals and motivation</h2>
+<p>This is the third module in our four hour workshop on open science. Now we focus on core principles for data management as the foundation for open science. We discuss the role of data management to support decisions using open science. Then, we introduce the concepts of tidy data as a unified format for storing information. We close with a discussion of metadata concepts and tools to make sure your data have a life beyond the project.</p>
+<ul>
+<li><strong>Goal</strong>: understand best practices for data management as a key concept for open science</li>
+<li><strong>Motivation</strong>: cultivate data as a living, shared resource</li>
+</ul>
+</div>
+<div id="data-as-the-foundation-for-open-science" class="section level2">
+<h2><span class="header-section-number">3.3</span> Data as the foundation for open science</h2>
+<p>In the last module, we talked about collaboration as the single most important activity of open science. So, why are we now talking about data management? Understanding the tools of collaboration allows you to better engage with your colleagues and partners, but open engagement will mean nothing if your data look like garbage.</p>
+<p><img src="img/datameme.jpg" width="100%" style="display: block; margin: auto;" /></p>
+<p>Anybody who has ever worked with data knows that it comes in many shapes and sizes, most more like the right side of the above picture. Poor data management occurs for many reasons, but here’s a few of the common reasons:</p>
+<ul>
+<li>What’s easy to enter in the field doesn’t usually translate to easy analysis</li>
+<li>Egregious use of Excel as data management software</li>
+<li>Metadata is a chore that is often an afterthought</li>
+</ul>
+<p>It’s often said that 90% of working with data is cleaning (or “wrangling”), whereas the actual analysis and interpretation part is a small fraction of your total effort. Using better data management practices will not only help you save time, it’s also a service for your colleagues and future collaborators. Therefore, better data management leads to more open science.</p>
+<p>The <a href="basics.html#fair">FAIR</a> principles outlined in the first module are especially useful when working with data for open science applications. Many of the collaborative tools in the second module can help you work towards putting FAIR data into practice. In this module, we’ll go a step further to discuss how data structure, including metadata, can produce a FAIR dataset.</p>
+</div>
+<div id="principles-of-tidy-data" class="section level2">
+<h2><span class="header-section-number">3.4</span> Principles of tidy data</h2>
+<p>At their core, tabular data allow you to store information as observations in rows and variables in columns, yet its very common to try to make a data table more than it should be. Unless you spend a lot of time working with data, it can be difficult to recognize common mistakes that lead to “table abuse”.</p>
+<p>Before we get into tidy data, we need to discuss some of the downfalls of Excel as a data management system. There are <a href="http://www.eusprig.org/horror-stories.htm">many examples</a> that demonstrate how Excel has contributed to costly mistakes through the abuse of tables, often to the detriment of science <span class="citation">(Ziemann, Eren, and El-Osta <a href="#ref-Ziemann16" role="doc-biblioref">2016</a>)</span>.</p>
+<p>Excel allows you to abuse your data in many ways, such as adding color to cells, embedding formulas, and automatically formatting cell types. The problem occurs when this organization becomes ambiguous and only has meaning inside the head of the person who created the spreadsheet. Embedding formulas that reference specific locations in or across spreadsheets is also a nightmare scenario for reproducibility.</p>
+<p><img src="img/excel_bad.png" width="80%" style="display: block; margin: auto;" /></p>
+<p>If you absolutely must use Excel to store data, the only acceptable format is a rectangular, flat file. <strong>Rectangular</strong> files store data only in rows and columns in matrix format (e.g., 10 rows x 5 columns), with no “dangling” cells that have values outside of the grid or more than one table in a spreadsheet. <strong>Flat</strong> files have no cell formatting, no embedded formulas, no multiple spreadsheets in the same file, and data entered only as alphanumeric characters.</p>
+<p><span class="citation">Broman and Woo (<a href="#ref-Broman18" role="doc-biblioref">2018</a>)</span> provide an excellent guide that expands on these ideas. Essentially, these best practices force you to isolate the analysis from the data - many people use Excel to mix the two, leading to problems.</p>
+<p>Now we can talk about tidy data. The “tidy” data principles developed by Hadley Wickham <span class="citation">(Wickham <a href="#ref-Wickham14c" role="doc-biblioref">2014</a>)</span> are a set of simple rules for storing tabular data that have motivated the development of the wildly popular tidyverse suite of R packages <span class="citation">(Wickham et al. <a href="#ref-Wickham19" role="doc-biblioref">2019</a>)</span>. The rules are simple:</p>
+<ol style="list-style-type: decimal">
+<li>Each variable must have its own column;</li>
+<li>Each observation must have its own row; and,</li>
+<li>Each value must have its own cell.</li>
+</ol>
+<p>Graphically, these rules are shown below:</p>
+<p><img src="img/tidy-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<p>Using these principles for data storage may seem unnatural at first because of a difference between what’s easy for entering data versus what makes sense for downstream analyses. For example, dates are often spread across multiple columns, such as having one column for each year of data where the header indicates the year that applies to data in each column.</p>
+<p>Using a tidy format also allows you to more easily join data between tables. This is a common task when you have information spread between different tables because: 1) it might not make sense to keep the data in the same table, and 2) the analysis depends on information from both tables. Tidy data shared between tables can be linked using a “key” as a common identifier.</p>
+<p><img src="img/joins.png" width="100%" style="display: block; margin: auto;" /></p>
+<h3>
+<svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M208 352c-2.39 0-4.78.35-7.06 1.09C187.98 357.3 174.35 360 160 360c-14.35 0-27.98-2.7-40.95-6.91-2.28-.74-4.66-1.09-7.05-1.09C49.94 352-.33 402.48 0 464.62.14 490.88 21.73 512 48 512h224c26.27 0 47.86-21.12 48-47.38.33-62.14-49.94-112.62-112-112.62zm-48-32c53.02 0 96-42.98 96-96s-42.98-96-96-96-96 42.98-96 96 42.98 96 96 96zM592 0H208c-26.47 0-48 22.25-48 49.59V96c23.42 0 45.1 6.78 64 17.8V64h352v288h-64v-64H384v64h-76.24c19.1 16.69 33.12 38.73 39.69 64H592c26.47 0 48-22.25 48-49.59V49.59C640 22.25 618.47 0 592 0z"/></svg> Watch and learn
+</h3>
+<p>Making an untidy dataset tidy using Excel.</p>
+<h3>
+<svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M208 352c-2.39 0-4.78.35-7.06 1.09C187.98 357.3 174.35 360 160 360c-14.35 0-27.98-2.7-40.95-6.91-2.28-.74-4.66-1.09-7.05-1.09C49.94 352-.33 402.48 0 464.62.14 490.88 21.73 512 48 512h224c26.27 0 47.86-21.12 48-47.38.33-62.14-49.94-112.62-112-112.62zm-48-32c53.02 0 96-42.98 96-96s-42.98-96-96-96-96 42.98-96 96 42.98 96 96 96zM592 0H208c-26.47 0-48 22.25-48 49.59V96c23.42 0 45.1 6.78 64 17.8V64h352v288h-64v-64H384v64h-76.24c19.1 16.69 33.12 38.73 39.69 64H592c26.47 0 48-22.25 48-49.59V49.59C640 22.25 618.47 0 592 0z"/></svg> Watch and learn
+</h3>
+<p>Making an untidy dataset tidy using R.</p>
+</div>
+<div id="importance-of-metadata" class="section level2">
+<h2><span class="header-section-number">3.5</span> Importance of metadata</h2>
+<ul>
 <li><p>What is metadata and why is it so important?</p></li>
+<li><p>What is a data dictionary</p></li>
 <li><p>Where do data live?</p></li>
 <li><p>Exercise idea 1: Use your shared workspace to create a data dictionary for a sample dataset</p></li>
 <li><p>Exercise idea 2: Use your shared workspace to create a metadata file for a sample dataset</p></li>
 <li><p>Exercise idea 3: Make an untidy dataset tidy, this will have to be done with a simple dataset unless we want to get into other tools like the tidyverse</p></li>
 </ul>
 
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-Broman18">
+<p>Broman, K. W., and K. H. Woo. 2018. “Data Organization in Spreadsheets.” <em>The American Statistician</em> 72 (1): 2–10. <a href="https://doi.org/10.1080/00031305.2017.1375989">https://doi.org/10.1080/00031305.2017.1375989</a>.</p>
+</div>
+<div id="ref-Wickham14c">
+<p>Wickham, H. 2014. “Tidy Data.” <em>Journal of Statistical Software</em> 59 (10): 1–23. <a href="https://doi.org/10.18637/jss.v059.i10">https://doi.org/10.18637/jss.v059.i10</a>.</p>
+</div>
+<div id="ref-Wickham19">
+<p>Wickham, H., M. Averick, J. Bryan, W. Chang, L. D’Agostino McGowan, R. François, G. Grolemund, et al. 2019. “Welcome to the tidyverse.” <em>Journal of Open Source Software</em> 4 (43): 1686. <a href="https://doi.org/10.21105/joss.01686">https://doi.org/10.21105/joss.01686</a>.</p>
+</div>
+<div id="ref-Ziemann16">
+<p>Ziemann, M., Y. Eren, and A. El-Osta. 2016. “Gene Name Errors Are Widespread in the Scientific Literature.” <em>Genome Biology</em> 17 (1): 1–3. <a href="https://doi.org/10.1186/s13059-016-1044-7">https://doi.org/10.1186/s13059-016-1044-7</a>.</p>
+</div>
 </div>
             </section>
 
