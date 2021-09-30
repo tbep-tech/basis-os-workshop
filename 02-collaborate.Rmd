@@ -209,11 +209,11 @@ Cloud-based Platform for sharing code with Git version control. Supports sharing
 
 <h4>`r fa('thumbs-up')` Pros</h4>
 
-Collaborative and fully transparent work environment for files under version control. Supports workflow management through issue tracking and Kanban style project boards. Octocat mascot is super cute. 
+Collaborative and fully transparent work environment for files under version control. Supports workflow management through issue tracking and Kanban style project boards. Links to third-party platforms for archiving and DOI generation (e.g., [Zenodo](https://zenodo.org/)). Octocat mascot is super cute. 
 
 <h4>`r fa('thumbs-down')` Cons</h4>
 
-Learning curve is steep if you want to fully leverage version control. Not a formal data archival service and file sizes are limited.
+Learning curve is steep if you want to fully leverage version control. Not a formal data archival service by itself and file sizes are limited.
 
 <h3>`r fa('chalkboard-teacher')` Watch and learn</h3>
 
