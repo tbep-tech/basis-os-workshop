@@ -26,4 +26,5 @@ goals-and-motivation-2
 data-as-the-foundation-for-open-science
 principles-of-tidy-data
 importance-of-metadata
+data-dictionaries
 implement

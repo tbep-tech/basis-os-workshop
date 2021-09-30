@@ -170,7 +170,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.2" data-path="impact.html"><a href="impact.html#goals-and-motivation-2"><i class="fa fa-check"></i><b>3.2</b> Goals and motivation</a></li>
 <li class="chapter" data-level="3.3" data-path="impact.html"><a href="impact.html#data-as-the-foundation-for-open-science"><i class="fa fa-check"></i><b>3.3</b> Data as the foundation for open science</a></li>
 <li class="chapter" data-level="3.4" data-path="impact.html"><a href="impact.html#principles-of-tidy-data"><i class="fa fa-check"></i><b>3.4</b> Principles of tidy data</a></li>
-<li class="chapter" data-level="3.5" data-path="impact.html"><a href="impact.html#importance-of-metadata"><i class="fa fa-check"></i><b>3.5</b> Importance of metadata</a></li>
+<li class="chapter" data-level="3.5" data-path="impact.html"><a href="impact.html#importance-of-metadata"><i class="fa fa-check"></i><b>3.5</b> Importance of metadata</a><ul>
+<li class="chapter" data-level="3.5.1" data-path="impact.html"><a href="impact.html#data-dictionaries"><i class="fa fa-check"></i><b>3.5.1</b> Data dictionaries</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="implement.html"><a href="implement.html"><i class="fa fa-check"></i><b>4</b> Lowering barriers to inclusion and addressing key critiques</a></li>
 <li class="chapter" data-level="" data-path="resources-for-continued-learning.html"><a href="resources-for-continued-learning.html"><i class="fa fa-check"></i>Resources for continued learning</a></li>
@@ -233,7 +235,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Before we get into tidy data, we need to discuss some of the downfalls of Excel as a data management system. There are <a href="http://www.eusprig.org/horror-stories.htm">many examples</a> that demonstrate how Excel has contributed to costly mistakes through the abuse of tables, often to the detriment of science <span class="citation">(Ziemann, Eren, and El-Osta <a href="#ref-Ziemann16" role="doc-biblioref">2016</a>)</span>.</p>
 <p>Excel allows you to abuse your data in many ways, such as adding color to cells, embedding formulas, and automatically formatting cell types. The problem occurs when this organization becomes ambiguous and only has meaning inside the head of the person who created the spreadsheet. Embedding formulas that reference specific locations in or across spreadsheets is also a nightmare scenario for reproducibility.</p>
 <p><img src="img/excel_bad.png" width="80%" style="display: block; margin: auto;" /></p>
-<p>If you absolutely must use Excel to store data, the only acceptable format is a rectangular, flat file. <strong>Rectangular</strong> files store data only in rows and columns in matrix format (e.g., 10 rows x 5 columns), with no “dangling” cells that have values outside of the grid or more than one table in a spreadsheet. <strong>Flat</strong> files have no cell formatting, no embedded formulas, no multiple spreadsheets in the same file, and data entered only as alphanumeric characters.</p>
+<p>If you absolutely must use Excel to store data, the only acceptable format is a rectangular, flat file. What do we mean by this?</p>
+<p>A <strong>rectangular</strong> file:</p>
+<blockquote>
+<p>Store data only in rows and columns in matrix format (e.g., 10 rows x 5 columns), with no “dangling” cells that have values outside of the grid or more than one table in a spreadsheet.</p>
+</blockquote>
+<p>A <strong>flat</strong> file:</p>
+<blockquote>
+<p>No cell formatting, no embedded formulas, no multiple spreadsheets in the same file, and data entered only as alphanumeric characters.</p>
+</blockquote>
 <p><span class="citation">Broman and Woo (<a href="#ref-Broman18" role="doc-biblioref">2018</a>)</span> provide an excellent guide that expands on these ideas. Essentially, these best practices force you to isolate the analysis from the data - many people use Excel to mix the two, leading to problems.</p>
 <p>Now we can talk about tidy data. The “tidy” data principles developed by Hadley Wickham <span class="citation">(Wickham <a href="#ref-Wickham14c" role="doc-biblioref">2014</a>)</span> are a set of simple rules for storing tabular data that have motivated the development of the wildly popular tidyverse suite of R packages <span class="citation">(Wickham et al. <a href="#ref-Wickham19" role="doc-biblioref">2019</a>)</span>. The rules are simple:</p>
 <ol style="list-style-type: decimal">
@@ -283,21 +293,59 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="importance-of-metadata" class="section level2">
 <h2><span class="header-section-number">3.5</span> Importance of metadata</h2>
-<ul>
-<li><p>What is metadata and why is it so important?</p></li>
-<li><p>What is a data dictionary</p></li>
-<li><p>Where do data live?</p></li>
-<li><p>Exercise idea 1: Use your shared workspace to create a data dictionary for a sample dataset</p></li>
-<li><p>Exercise idea 2: Use your shared workspace to create a metadata file for a sample dataset</p></li>
-<li><p>Exercise idea 3: Make an untidy dataset tidy, this will have to be done with a simple dataset unless we want to get into other tools like the tidyverse</p></li>
-</ul>
+<p>How many times have you been sent a dataset without any idea what it contains or why it was created? How are you sure the information is valid and that your analysis takes into account the limitations of the data? How many times have you willfully sent someone a dataset without fully providing this information?</p>
+<p>Without metadata it’s impossible to know critical details about a dataset that can inform its analysis, and more importantly, its use to inform decision-making. Curating data should be synonymous with metadata generation and is an important part of open science. We cannot provide open data in good faith without also providing metadata.</p>
+<p>Metadata is literally defined as “data about data” or “information about information”. It varies from simple text descriptions of a dataset, such as “who”, “what”, “when”, “where”, “why”, and “how”, to more formalized standards with the intent of preparing your data for archival in a long-term repository. A useful definition is provided by <span class="citation">Gilliland (<a href="#ref-Gilliland16" role="doc-biblioref">2016</a>)</span>:</p>
+<blockquote>
+<p>A suite of industry or disciplinary standards as well as additional internal and external documentation and other data necessary for the identification, representation, interoperability, technical management, performance, and use of data contained in an information system.</p>
+</blockquote>
+<p>Why don’t we see more metadata in the wild? Short answer is that it’s often an afterthought, if considered at all. Creating metadata is usually tedious and the return on investment is not apparent at onset of a project. However, the collective growth of sciences and its application to real world problems is dependent on metadata.</p>
+<p>The US Geological Survey provides a useful document on creating <a href="https://prd-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/atoms/files/Metadata%20in%20Plain%20Language_508compliant.pdf">Metadata in “plain language”</a> to distill the basic information contained in a metadata file. It provides a workflow for answering the “who”, “what”, “when”, “where”, “why”, and “how” questions for metadata. Below is a brief synopsis:</p>
+<blockquote>
+<p>What does the dataset describe?</p>
+</blockquote>
+<p>Information here would include very basic details about the dataset including a <strong>title</strong>, <strong>geographic extent</strong>, and <strong>period of time</strong> covered by the data. For geographic extent, this may often include explicit coordinates covering the study area. Location is useful for indexing your dataset relative to others, if for example, a researcher wanted to find data for all studies in the geographic extent of Tampa Bay.</p>
+<blockquote>
+<p>Who produced the dataset?</p>
+</blockquote>
+<p>This would be yourself and anyone else who has made a significant contribution to the development of a dataset. Data are increasingly being used as citable resources and including individuals that were important in its generation ensures proper attribution. If someone has spent hours toiling in the field to collect the data or hours visually scanning a spreadsheet for quality control, include them!</p>
+<blockquote>
+<p>Why was the dataset created?</p>
+</blockquote>
+<p>Describing why a dataset was created is critically important for understanding context. If others want to use your data, they need to know if it’s appropriate for their needs. Here you would describe the goal or objectives of the research for which the data were collected. It should be clear if there are limitations in your data defined by your goals.</p>
+<blockquote>
+<p>How was the dataset created?</p>
+</blockquote>
+<p>Here you would describe the methods used to generate the data, e.g., field sampling techniques, laboratory methods, etc. This information is important so others can know if you’ve used proper and accepted methods for generating the data. Citing existing SOPs or methods that are recognized standards in your field would be appropriate.</p>
+<blockquote>
+<p>How reliable are the data?</p>
+</blockquote>
+<p>It’s also important to explicitly note instances when the data could be questionable or inappropriate to use. Here you could describe any quality assurance or quality control (QAQC) checks that were used on the data. There are often formalized ways to do so, such as codes or descriptors in tabular data defining QAQC values (e.g., data in range, below detection limits, sensor out of service, etc.).</p>
+<blockquote>
+<p>How can someone get a copy of the dataset?</p>
+</blockquote>
+<p>Good metadata has information on who contact for getting the data. This contact may not be the same as who created the dataset (e.g., IT staff). For archived or publicly available data, this information is more important for who to contact should someone have questions. Information on obtaining a copy of the data should also describe any special software or licensing issues related to accessing the data.</p>
+<p>Once you’ve gathered this information, how do you turn it into literal metadata? It depends on how deep you want to go. At it’s simplest, your metadata could be a simple text file with answers to the questions. Or it could be a specific file format used by modern data archive repositories (e.g., <a href="https://docs.ropensci.org/EML/">EML</a> format).</p>
+<p>Here’s an example of a bare bones metadata file. One could easily type this up in a text file or spreadsheet.</p>
+<p><img src="img/desotometa.PNG" width="100%" style="display: block; margin: auto;" /></p>
+<div id="data-dictionaries" class="section level3">
+<h3><span class="header-section-number">3.5.1</span> Data dictionaries</h3>
+<p>Often the first step in documenting metadata is to create a data dictionary. Think of this as the specific description of the contents of a tabular data file. Developing a a data dictionary not only helps with metadata, but also helps you think more clearly about your data.</p>
+<h3>
+<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M496 448H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h480c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16zm-304-64l-64-32 64-32 32-64 32 64 64 32-64 32-16 32h208l-86.41-201.63a63.955 63.955 0 0 1-1.89-45.45L416 0 228.42 107.19a127.989 127.989 0 0 0-53.46 59.15L64 416h144l-16-32zm64-224l16-32 16 32 32 16-32 16-16 32-16-32-32-16 32-16z"/></svg> Exercise
+</h3>
+<p>Create a data dictionary for the <a href="https://github.com/tbep-tech/cerf-os-workshop/raw/master/data/tidy.xlsx">tidy</a> dataset from the previous example.</p>
 
+</div>
 </div>
 </div>
 <h3>References</h3>
 <div id="refs" class="references">
 <div id="ref-Broman18">
 <p>Broman, K. W., and K. H. Woo. 2018. “Data Organization in Spreadsheets.” <em>The American Statistician</em> 72 (1): 2–10. <a href="https://doi.org/10.1080/00031305.2017.1375989">https://doi.org/10.1080/00031305.2017.1375989</a>.</p>
+</div>
+<div id="ref-Gilliland16">
+<p>Gilliland, A. J. 2016. “Setting the Stage.” In <em>Introduction to Metadata</em>, 3rd ed. Los Angeles, California: Getty Publications.</p>
 </div>
 <div id="ref-Wickham14c">
 <p>Wickham, H. 2014. “Tidy Data.” <em>Journal of Statistical Software</em> 59 (10): 1–23. <a href="https://doi.org/10.18637/jss.v059.i10">https://doi.org/10.18637/jss.v059.i10</a>.</p>
