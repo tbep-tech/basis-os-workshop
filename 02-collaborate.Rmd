@@ -148,15 +148,15 @@ https://trello.com/
 
 <h4>`r fa('question')` What</h4>
 
-A Kanban style workflow organization platform.  Can be used for personal organization or in teams. 
+A Kanban style workflow organization platform.  Can be used for personal organization or in teams.  Card management allows you to assign due dates, add attachments, make checklists, assign tasks to yourself or team members, and label by themes. 
 
 <h4>`r fa('thumbs-up')` Pros</h4>
 
-Easy to use and can upgrade with "power-ups" for integration with other services (e.g., Google). 
+Easy to use and can upgrade with "power-ups" for integration with other services (e.g., Google). Use across locations (e.g., from home or in the office) is easy because it's based in a web browser.
 
 <h4>`r fa('thumbs-down')` Cons</h4>
 
-Only visible to yourself or those you explicitly invite.  Free version is limited.
+Not entirely open because it's only visible to yourself or those you explicitly invite.  Free version is limited to only a handful of "power-ups".
 
 ### Google Drive
 
@@ -167,7 +167,7 @@ https://google.com/drive
 
 <h4>`r fa('question')` What</h4>
 
-Cloud-based Platform for sharing documents, worksheets, slides, etc. Requires a Google username. 
+Cloud-based Platform for sharing documents, worksheets, slides, etc. Follows a familiar file-based GUI structure that is common to most operating systems. 
 
 <h4>`r fa('thumbs-up')` Pros</h4>
 
@@ -175,7 +175,7 @@ Easy to use and can be a very open space for collaboration. Fairly interoperable
 
 <h4>`r fa('thumbs-down')` Cons</h4>
 
-Access can be tricky depending on institution.  Who knows what Google is doing with your data. 
+Requires a Google account and access can be tricky depending on institution.  Even though some versioning is provided, the format can encourage poor file management. Who knows what Google is doing with your data. 
 
 ### Office 365
 
@@ -186,15 +186,15 @@ https://google.com/drive
 
 <h4>`r fa('question')` What</h4>
 
-Cloud-based Platform for sharing Microsoft documents, worksheets, slides, etc. Requires a Microsoft account. 
+Cloud-based Platform for secure sharing of Microsoft documents, worksheets, slides, etc. 
 
 <h4>`r fa('thumbs-up')` Pros</h4>
 
-Easy to use and fully supports Microsoft products.
+Easy to use and fully supports Microsoft products.  Low barrier of inclusion to others that are already using Microsoft products (should be most folks).
 
 <h4>`r fa('thumbs-down')` Cons</h4>
 
-Access can be tricky depending on institution. Maintains dependency on expensive Microsoft products that don't facilitate reproducibility. 
+Requires a Microsoft account and access can be tricky depending on institution. Maintains dependency on expensive Microsoft products that don't facilitate reproducibility. Very often used in closed workflows.
 
 ### GitHub
 
@@ -221,7 +221,7 @@ Setting up a project management system with GitHub.
 
 <h3>`r fa('hat-wizard')` Exercise</h3>
 
-In small groups, setup a shared workspace using one of the collaborative platforms. 
+In small groups, setup a shared workspace using GitHub and create a project management board. 
 
 ## Balancing and managing expectations
 
