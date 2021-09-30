@@ -1,10 +1,12 @@
 # Open science for impactful products {#impact}
 
 ```{r, echo = F, warning = F, message = F}
-knitr::opts_chunk$set(echo = F, fig.align = 'center', out.width = '100%')
+knitr::opts_chunk$set(echo = F, fig.align = 'center', out.width = '100%', message = F, warning = F)
 
 library(fontawesome)
 ```
+
+<script src="hideoutput.js"></script>
 
 ## Lesson Outline
 
@@ -76,11 +78,26 @@ knitr::include_graphics('img/joins.png')
 
 <h3>`r fa('chalkboard-teacher')` Watch and learn</h3>
 
-Making an untidy dataset tidy using Excel. 
+Making an [untidy](https://github.com/tbep-tech/cerf-os-workshop/raw/master/data/untidy.xlsx) dataset [tidy](https://github.com/tbep-tech/cerf-os-workshop/raw/master/data/tidy.xlsx) using Excel. 
 
 <h3>`r fa('chalkboard-teacher')` Watch and learn</h3>
 
 Making an untidy dataset tidy using R.
+
+<div class="fold s o">
+```{r, eval = T, echo = T}
+library(readxl)
+library(dplyr)
+library(tidyr)
+
+# import and wrangle
+dat <- read_excel('data/untidy.xlsx', skip = 1) %>% 
+  fill(Location) %>% 
+  pivot_longer(cols = `2019`:`2021`, names_to = 'Year', values_to = 'acres/category') %>% 
+  separate(col = `acres/category`, into = c('acres', 'category'), sep = '/')
+dat
+```
+</div>
 
 ## Importance of metadata
 
