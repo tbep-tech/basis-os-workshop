@@ -13,6 +13,7 @@ library(fontawesome)
 * [Goals and motivation]
 * [Data as the foundation for open science]
 * [Principles of tidy data]
+* [Data dictionaries]
 * [Importance of metadata]
 
 ## Goals and motivation
@@ -29,6 +30,12 @@ In the last module, we talked about collaboration as the single most important a
 ```{r}
 knitr::include_graphics('img/datameme.jpg')
 ```
+
+You can probably recall several past instances when poor data management has been a challenge for open collaboration.  Here are a few real-world examples: 
+
+1. A collaborator calls you on the phone asking about a historical dataset from an old report.  You spend several hours tracking down this information because you don't know where it is. The data you eventually find and provide to your collaborator has no documentation and they don't know how to use it or use it inappropriately. 
+1. You receive a deliverable from a project partner that was stipulated in a scope of work.  This deliverable comes in multiple formats with no reproducible workflow to recreate the datasets.  You are unable to verify the information, eroding your faith in the final product and making it impossible to update the results in the future.
+1. An annual reporting product requires using new data each year.  The staff member in charge of this report spends several days gathering the new data and combining it with the historical data.  Other projects are on hold until this report is updated.  Stakeholders that use this report to make decisions do not trust or misunderstand the product because the steps for its creation are opaque. 
 
 Anybody who has ever worked with data knows that it comes in many shapes and sizes, most more like the right side of the above picture.  Poor data management occurs for many reasons, but here's a few of the common reasons: 
 
@@ -90,7 +97,7 @@ Making an [untidy](https://github.com/tbep-tech/cerf-os-workshop/raw/master/data
 
 <h3>`r fa('chalkboard-teacher')` Watch and learn</h3>
 
-Making an untidy dataset tidy using R.
+Making an [untidy](https://github.com/tbep-tech/cerf-os-workshop/raw/master/data/untidy.xlsx) dataset [tidy](https://github.com/tbep-tech/cerf-os-workshop/raw/master/data/tidy.xlsx) using R.
 
 <div class="fold s o">
 ```{r, eval = T, echo = T}
@@ -106,6 +113,43 @@ dat <- read_excel('data/untidy.xlsx', skip = 1) %>%
 dat
 ```
 </div>
+
+<h3>`r fa('hat-wizard')` Exercise</h3>
+
+Now try it on your own. Download the [untidy](https://github.com/tbep-tech/cerf-os-workshop/raw/master/data/untidy.xlsx) dataset and make it tidy using your preferred software. 
+
+## Data dictionaries
+
+Once you understand the tidy principles, you'll find that analysis is much, much easier.  More importantly, this also greatly facilitates documentation for the explicit purpose of more open sharing.  As responsible data stewards, we need to think of data as a living resource for open collaboration that is not just a means for more conventional scientific products (e.g., a publication).  Data are increasingly being documented and cited as unique entities and we need proper documentation to help support the FAIR principles. 
+
+A good first step in documentation is to create a data dictionary. This will help us when we start creating [metadata](#importance-of-metadata). Think of this as the specific description of the contents of a tabular data file. Developing a data dictionary not only helps with metadata, but also helps you think more clearly about your data. 
+
+A data dictionary describes column names and the type of data in each column.  Simple things like how you name a data column can have larger implications for downstream analysis pipelines or interpretability of a dataset.
+
+Here's an example of a data dictionary for a made up dataset.  Without seeing the actua data, you get a good sense of what's included and acceptable values for adding new data. 
+
+```{r, out.width = '80%', echo = F}
+knitr::include_graphics('img/datadict.png')
+```
+
+Here we provide some general guidelines for developing your own data dictionary.  
+
+* Column names
+
+     * Be as descriptive as possible while trying to keep the name as short as possible. Really long names with lots of detail can be just as frustrating as very short names with very little detail. The column name should be intuitive to point the analyst in the right direction.  
+     * Try to avoid spaces or commas in column names since some software may interpret that as the start of a new column.  
+     * It may also be useful to identify a "plot name" for each column name that uses proper spelling, punctuation, and units (if applicable).  Using a column name directly in a graphic is generally a bad idea since their meaning outside of the dataset may not be obvious.   
+
+* Column types
+
+     * Describe the type of data in each column, e.g., numerical measurements, categorical descriptors, or counts of observations.  Never, ever mix data types in the same column.  
+     * If your data are continuous numeric values, try to identify an acceptable range for the values, e.g., are there minimum or maximum values that would indicate the data are out of range? Also make note of the units that were used.  
+     * For categorical descriptors, identify all possible categories that are acceptable values for the column, e.g., small, medium, or large for a qualitative descriptor of size.  
+     * For dates, make note of the format, e.g., YYYY-MM-DD.  For time, identify the timezone. 
+
+<h3>`r fa('hat-wizard')` Exercise</h3>
+
+Create a data dictionary for the [tidy](https://github.com/tbep-tech/cerf-os-workshop/raw/master/data/tidy.xlsx) dataset from the previous example. 
 
 ## Importance of metadata
 
@@ -153,11 +197,6 @@ Here's an example of a bare bones metadata file. One could easily type this up i
 knitr::include_graphics('img/desotometa.PNG')
 ```
 
-### Data dictionaries
-
-Often the first step in documenting metadata is to create a data dictionary.  Think of this as the specific description of the contents of a tabular data file. Developing a a data dictionary not only helps with metadata, but also helps you think more clearly about your data. 
-
 <h3>`r fa('hat-wizard')` Exercise</h3>
 
-Create a data dictionary for the [tidy](https://github.com/tbep-tech/cerf-os-workshop/raw/master/data/tidy.xlsx) dataset from the previous example. 
-
+Create a metadata file for the [tidy](https://github.com/tbep-tech/cerf-os-workshop/raw/master/data/tidy.xlsx) dataset from the previous example. Just start by using your data dictionary and develop narrative answers for "who", "what", "when", "where", "why", and "how" to describe your dataset.  Get creative with your descriptions since this is a made up dataset. 
