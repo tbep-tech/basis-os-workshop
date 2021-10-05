@@ -170,9 +170,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.2" data-path="impact.html"><a href="impact.html#goals-and-motivation-2"><i class="fa fa-check"></i><b>3.2</b> Goals and motivation</a></li>
 <li class="chapter" data-level="3.3" data-path="impact.html"><a href="impact.html#data-as-the-foundation-for-open-science"><i class="fa fa-check"></i><b>3.3</b> Data as the foundation for open science</a></li>
 <li class="chapter" data-level="3.4" data-path="impact.html"><a href="impact.html#principles-of-tidy-data"><i class="fa fa-check"></i><b>3.4</b> Principles of tidy data</a></li>
-<li class="chapter" data-level="3.5" data-path="impact.html"><a href="impact.html#importance-of-metadata"><i class="fa fa-check"></i><b>3.5</b> Importance of metadata</a><ul>
-<li class="chapter" data-level="3.5.1" data-path="impact.html"><a href="impact.html#data-dictionaries"><i class="fa fa-check"></i><b>3.5.1</b> Data dictionaries</a></li>
-</ul></li>
+<li class="chapter" data-level="3.5" data-path="impact.html"><a href="impact.html#data-dictionaries"><i class="fa fa-check"></i><b>3.5</b> Data dictionaries</a></li>
+<li class="chapter" data-level="3.6" data-path="impact.html"><a href="impact.html#importance-of-metadata"><i class="fa fa-check"></i><b>3.6</b> Importance of metadata</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="implement.html"><a href="implement.html"><i class="fa fa-check"></i><b>4</b> Lowering barriers to inclusion and addressing key critiques</a></li>
 <li class="chapter" data-level="" data-path="resources-for-continued-learning.html"><a href="resources-for-continued-learning.html"><i class="fa fa-check"></i>Resources for continued learning</a></li>
@@ -205,6 +204,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="impact.html#goals-and-motivation-2">Goals and motivation</a></li>
 <li><a href="impact.html#data-as-the-foundation-for-open-science">Data as the foundation for open science</a></li>
 <li><a href="impact.html#principles-of-tidy-data">Principles of tidy data</a></li>
+<li><a href="impact.html#data-dictionaries">Data dictionaries</a></li>
 <li><a href="impact.html#importance-of-metadata">Importance of metadata</a></li>
 </ul>
 </div>
@@ -220,6 +220,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2><span class="header-section-number">3.3</span> Data as the foundation for open science</h2>
 <p>In the last module, we talked about collaboration as the single most important activity of open science. So, why are we now talking about data management? Understanding the tools of collaboration allows you to better engage with your colleagues and partners, but open engagement will mean nothing if your data look like garbage.</p>
 <p><img src="img/datameme.jpg" width="100%" style="display: block; margin: auto;" /></p>
+<p>You can probably recall several past instances when poor data management has been a challenge for open collaboration. Here are a few real-world examples:</p>
+<ol style="list-style-type: decimal">
+<li>A collaborator calls you on the phone asking about a historical dataset from an old report. You spend several hours tracking down this information because you don’t know where it is. The data you eventually find and provide to your collaborator has no documentation and they don’t know how to use it or use it inappropriately.</li>
+<li>You receive a deliverable from a project partner that was stipulated in a scope of work. This deliverable comes in multiple formats with no reproducible workflow to recreate the datasets. You are unable to verify the information, eroding your faith in the final product and making it impossible to update the results in the future.</li>
+<li>An annual reporting product requires using new data each year. The staff member in charge of this report spends several days gathering the new data and combining it with the historical data. Other projects are on hold until this report is updated. Stakeholders that use this report to make decisions do not trust or misunderstand the product because the steps for its creation are opaque.</li>
+</ol>
 <p>Anybody who has ever worked with data knows that it comes in many shapes and sizes, most more like the right side of the above picture. Poor data management occurs for many reasons, but here’s a few of the common reasons:</p>
 <ul>
 <li>What’s easy to enter in the field doesn’t usually translate to easy analysis</li>
@@ -263,7 +269,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h3>
 <svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M208 352c-2.39 0-4.78.35-7.06 1.09C187.98 357.3 174.35 360 160 360c-14.35 0-27.98-2.7-40.95-6.91-2.28-.74-4.66-1.09-7.05-1.09C49.94 352-.33 402.48 0 464.62.14 490.88 21.73 512 48 512h224c26.27 0 47.86-21.12 48-47.38.33-62.14-49.94-112.62-112-112.62zm-48-32c53.02 0 96-42.98 96-96s-42.98-96-96-96-96 42.98-96 96 42.98 96 96 96zM592 0H208c-26.47 0-48 22.25-48 49.59V96c23.42 0 45.1 6.78 64 17.8V64h352v288h-64v-64H384v64h-76.24c19.1 16.69 33.12 38.73 39.69 64H592c26.47 0 48-22.25 48-49.59V49.59C640 22.25 618.47 0 592 0z"/></svg> Watch and learn
 </h3>
-<p>Making an untidy dataset tidy using R.</p>
+<p>Making an <a href="https://github.com/tbep-tech/cerf-os-workshop/raw/master/data/untidy.xlsx">untidy</a> dataset <a href="https://github.com/tbep-tech/cerf-os-workshop/raw/master/data/tidy.xlsx">tidy</a> using R.</p>
 <div class="fold s o">
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="impact.html#cb2-1"></a><span class="kw">library</span>(readxl)</span>
 <span id="cb2-2"><a href="impact.html#cb2-2"></a><span class="kw">library</span>(dplyr)</span>
@@ -290,9 +296,46 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 10 Fish Bay  Seagrass 2019  930   B       
 ## # … with 17 more rows</code></pre>
 </div>
+<h3>
+<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M496 448H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h480c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16zm-304-64l-64-32 64-32 32-64 32 64 64 32-64 32-16 32h208l-86.41-201.63a63.955 63.955 0 0 1-1.89-45.45L416 0 228.42 107.19a127.989 127.989 0 0 0-53.46 59.15L64 416h144l-16-32zm64-224l16-32 16 32 32 16-32 16-16 32-16-32-32-16 32-16z"/></svg> Exercise
+</h3>
+<p>Now try it on your own. Download the <a href="https://github.com/tbep-tech/cerf-os-workshop/raw/master/data/untidy.xlsx">untidy</a> dataset and make it tidy using your preferred software.</p>
+</div>
+<div id="data-dictionaries" class="section level2">
+<h2><span class="header-section-number">3.5</span> Data dictionaries</h2>
+<p>Once you understand the tidy principles, you’ll find that analysis is much, much easier. More importantly, this also greatly facilitates documentation for the explicit purpose of more open sharing. As responsible data stewards, we need to think of data as a living resource for open collaboration that is not just a means for more conventional scientific products (e.g., a publication). Data are increasingly being documented and cited as unique entities and we need proper documentation to help support the FAIR principles.</p>
+<p>A good first step in documentation is to create a data dictionary. This will help us when we start creating <a href="impact.html#importance-of-metadata">metadata</a>. Think of this as the specific description of the contents of a tabular data file. Developing a data dictionary not only helps with metadata, but also helps you think more clearly about your data.</p>
+<p>A data dictionary describes column names and the type of data in each column. Simple things like how you name a data column can have larger implications for downstream analysis pipelines or interpretability of a dataset.</p>
+<p>Here’s an example of a data dictionary for a made up dataset. Without seeing the actua data, you get a good sense of what’s included and acceptable values for adding new data.</p>
+<p><img src="img/datadict.png" width="80%" style="display: block; margin: auto;" /></p>
+<p>Here we provide some general guidelines for developing your own data dictionary.</p>
+<ul>
+<li><p>Column names</p>
+<ul>
+<li>Be as descriptive as possible while trying to keep the name as short as possible. Really long names with lots of detail can be just as frustrating as very short names with very little detail. The column name should be intuitive to point the analyst in the right direction.<br />
+</li>
+<li>Try to avoid spaces or commas in column names since some software may interpret that as the start of a new column.<br />
+</li>
+<li>It may also be useful to identify a “plot name” for each column name that uses proper spelling, punctuation, and units (if applicable). Using a column name directly in a graphic is generally a bad idea since their meaning outside of the dataset may not be obvious.</li>
+</ul></li>
+<li><p>Column types</p>
+<ul>
+<li>Describe the type of data in each column, e.g., numerical measurements, categorical descriptors, or counts of observations. Never, ever mix data types in the same column.<br />
+</li>
+<li>If your data are continuous numeric values, try to identify an acceptable range for the values, e.g., are there minimum or maximum values that would indicate the data are out of range? Also make note of the units that were used.<br />
+</li>
+<li>For categorical descriptors, identify all possible categories that are acceptable values for the column, e.g., small, medium, or large for a qualitative descriptor of size.<br />
+</li>
+<li>For dates, make note of the format, e.g., YYYY-MM-DD. For time, identify the timezone.</li>
+</ul></li>
+</ul>
+<h3>
+<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M496 448H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h480c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16zm-304-64l-64-32 64-32 32-64 32 64 64 32-64 32-16 32h208l-86.41-201.63a63.955 63.955 0 0 1-1.89-45.45L416 0 228.42 107.19a127.989 127.989 0 0 0-53.46 59.15L64 416h144l-16-32zm64-224l16-32 16 32 32 16-32 16-16 32-16-32-32-16 32-16z"/></svg> Exercise
+</h3>
+<p>Create a data dictionary for the <a href="https://github.com/tbep-tech/cerf-os-workshop/raw/master/data/tidy.xlsx">tidy</a> dataset from the previous example.</p>
 </div>
 <div id="importance-of-metadata" class="section level2">
-<h2><span class="header-section-number">3.5</span> Importance of metadata</h2>
+<h2><span class="header-section-number">3.6</span> Importance of metadata</h2>
 <p>How many times have you been sent a dataset without any idea what it contains or why it was created? How are you sure the information is valid and that your analysis takes into account the limitations of the data? How many times have you willfully sent someone a dataset without fully providing this information?</p>
 <p>Without metadata it’s impossible to know critical details about a dataset that can inform its analysis, and more importantly, its use to inform decision-making. Curating data should be synonymous with metadata generation and is an important part of open science. We cannot provide open data in good faith without also providing metadata.</p>
 <p>Metadata is literally defined as “data about data” or “information about information”. It varies from simple text descriptions of a dataset, such as “who”, “what”, “when”, “where”, “why”, and “how”, to more formalized standards with the intent of preparing your data for archival in a long-term repository. A useful definition is provided by <span class="citation">Gilliland (<a href="#ref-Gilliland16" role="doc-biblioref">2016</a>)</span>:</p>
@@ -328,15 +371,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Once you’ve gathered this information, how do you turn it into literal metadata? It depends on how deep you want to go. At it’s simplest, your metadata could be a simple text file with answers to the questions. Or it could be a specific file format used by modern data archive repositories (e.g., <a href="https://docs.ropensci.org/EML/">EML</a> format).</p>
 <p>Here’s an example of a bare bones metadata file. One could easily type this up in a text file or spreadsheet.</p>
 <p><img src="img/desotometa.PNG" width="100%" style="display: block; margin: auto;" /></p>
-<div id="data-dictionaries" class="section level3">
-<h3><span class="header-section-number">3.5.1</span> Data dictionaries</h3>
-<p>Often the first step in documenting metadata is to create a data dictionary. Think of this as the specific description of the contents of a tabular data file. Developing a a data dictionary not only helps with metadata, but also helps you think more clearly about your data.</p>
 <h3>
 <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M496 448H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h480c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16zm-304-64l-64-32 64-32 32-64 32 64 64 32-64 32-16 32h208l-86.41-201.63a63.955 63.955 0 0 1-1.89-45.45L416 0 228.42 107.19a127.989 127.989 0 0 0-53.46 59.15L64 416h144l-16-32zm64-224l16-32 16 32 32 16-32 16-16 32-16-32-32-16 32-16z"/></svg> Exercise
 </h3>
-<p>Create a data dictionary for the <a href="https://github.com/tbep-tech/cerf-os-workshop/raw/master/data/tidy.xlsx">tidy</a> dataset from the previous example.</p>
+<p>Create a metadata file for the <a href="https://github.com/tbep-tech/cerf-os-workshop/raw/master/data/tidy.xlsx">tidy</a> dataset from the previous example. Just start by using your data dictionary and develop narrative answers for “who”, “what”, “when”, “where”, “why”, and “how” to describe your dataset. Get creative with your descriptions since this is a made up dataset.</p>
 
-</div>
 </div>
 </div>
 <h3>References</h3>
