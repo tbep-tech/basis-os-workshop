@@ -28,3 +28,9 @@ principles-of-tidy-data
 data-dictionaries
 importance-of-metadata
 implement
+lesson-outline-3
+goals-and-motivation-3
+learning-curves
+fear-of-exposure
+what-does-it-mean-to-be-open
+something-is-better-than-nothing
