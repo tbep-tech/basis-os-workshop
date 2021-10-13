@@ -1,17 +1,54 @@
 # Lowering barriers to inclusion and addressing key critiques {#implement}
 
+
+```{r, echo = F, warning = F, message = F}
+knitr::opts_chunk$set(echo = F, fig.align = 'center', out.width = '100%', message = F, warning = F)
+```
+
+## Lesson Outline
+
+* [Goals and motivation]
+* [Learning curves]
+* [Fear of exposure]
+* [What does it mean to be open?]
+* [Something is better than nothing]
+
+## Goals and motivation
+
+We finish our workshop with a discussion of what it means to use open science in the real world. It's great to talk about the value of open science, but it's a completely different ball game when it comes to putting these ideas into practice.  Our goal is that you leave this workshop an advocate and early adopter for the ideas we discussed today - spread these ideas to your peers and colleagues!  To realistically achieve this goal, we will talk about some of the challenges you will face during this journey to help you develop a realistic expectation for implementing open science in the wild.
+
+* __Goal__: Understand common hurdles in adopting open science and how to overcome them  
+* __Motivation__: Become the "open science" expert at your institution!
+
+## Learning curves
+
+```{r, out.width = '75%'}
+knitr::include_graphics('img/challenge.png')
+```
+
 * Learning curves/overhead associated with new the tools
 
+## Fear of exposure
+
+```{r, out.width = '50%'}
+knitr::include_graphics('img/fishbowl.png')
+```
+
 * Fear of being open - exposure of mistakes, getting scooped, losing the competitive edge, etc.
+
+## What does it mean to be open?
 
 * What is open to the public agency (operating in the sunshine)? 
 
 * What is open to the academic? 
 
-Here's some new text
+## Something is better than nothing
 
-Awesome sauce
+First time open science enthusiasts can be overwhelmed by the apparent need to check all the boxes in the open science arena.  There's often a prevailing sentiment that you're not doing open science unless you do all the things.  This is simply not true. 
 
-![](img/cake.png)
+Just like learning any new skill, don't be discouraged by an initial lack of progress or no immediate return on investment.  Also try not to give into the familiarity of old habits when new ideas or workflows seems like too much.  Just remember this simple concept:
 
-Here's a [link](https://tbep.org)
+> "Something is better than nothing!"
+
+Be pragmatic and embrace the idea that something is better than nothing when it comes to data management. Perhaps you set a goal of only checking one data management box for a particular project. Maybe you start by developing a simple metadata text file or developing a data dictionary. Even if you accomplish only one data management related task, this is a vast improvement over doing nothing at all. Channeling this concept, Wilson et al. (2017) discuss “good enough practices” in scientific computing, acknowledging that very few of us are professionally trained in data science and sometimes “good enough” is all we can ask for. Lowenberg et al. (2021) also advocate for simple adoption, rather than perfection, when it comes to data citation practices. So, be kind to yourself when learning new skills and realize that the first step will likely be frustration, but through frustration comes experience. The more comfortable you become in mastering a new task, the more likely you’ll be able to attempt additional data management tasks in the future.
+
