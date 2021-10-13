@@ -127,7 +127,7 @@ Simply, what this means is: 1) each dataset has a name that doesn't change and c
 
 For our purposes, think of these ideas as general guidelines you can ask yourself when doing science.  If you find that your work does not achieve FAIR status, then you're probably not being as open as you could be.  We'll of course provide some tools to help you be FAIR and open. 
 
-## Schools of thought
+## Schools of thought (#schools)
 
 Finally, it's useful to make a distinction of how different people may talk about open science. This can help you better navigate conversations and become an advocate for open science in your own right. 
 
