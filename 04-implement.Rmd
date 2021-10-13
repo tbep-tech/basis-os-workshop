@@ -3,6 +3,8 @@
 
 ```{r, echo = F, warning = F, message = F}
 knitr::opts_chunk$set(echo = F, fig.align = 'center', out.width = '100%', message = F, warning = F)
+
+library(fontawesome)
 ```
 
 ## Lesson Outline
@@ -26,17 +28,21 @@ We finish our workshop with a discussion of what it means to use open science in
 knitr::include_graphics('img/challenge.png')
 ```
 
-You've probabably seen a graphic like this if you've ever taken a course in R or Python.  The hope is that you're able to quickly reach the land of sunshine and bunnies, but the path is treacherous and even insurmountable for some.  
+You've probably seen a graphic like this if you've ever taken a course in R or Python.  The hope is that you're able to quickly reach the land of sunshine and bunnies, but the path is treacherous and even insurmountable for some.  
 
-A huge obstacle in using open science is that the toolsets have steep learning curves.  More popular platforms, such as Excel, are used by many because they're simple and intuitive.  However, as noted earlier, FAIR workflows and tools are sacrificed for ease of use.  
+A huge obstacle in using open science is that the toolsets can have steep learning curves.  More popular platforms, such as Excel, are used by many because they're simple and intuitive.  However, [as noted earlier](#tidy), FAIR workflows and tools are sacrificed for ease of use.  
 
-Although it's true that adopting new tools will slow forward progress, this is only temporary.  Consider your path towards learning new platforms as an investment in your future.  The immediate benefit may not be apparent, but you'll soon wonder how you ever got by without these tools.  
+Although it's true that adopting new tools will slow forward progress, this is only temporary.  Consider your path towards learning new platforms as an investment in your future.  The immediate benefit may not be apparent, but you'll soon wonder how you ever got by before.  
 
 It's also helpful to think about the broader community that can support you along this journey. Learning alone can be discouraging and we strongly recommend that you tap into the diverse community of educators, mentors, bloggers, and friends that can help.  Even you can create a community of practice!
 
 ```{r, out.width = '75%'}
 knitr::include_graphics('img/code_hero.jpg')
 ```
+
+<h3>`r fa('hat-wizard')` Discussion</h3>
+
+How can you engage your peers to develop a shared workspace to learn new tools? What tools will you learn?
 
 ## Fear of exposure
 
@@ -46,7 +52,7 @@ knitr::include_graphics('img/fishbowl.png')
 
 Practicing open science can feel like science in a fish bowl. Although this is kind of the goal, many view this transparency as a liability. Many fear having their ideas "scooped" or losing credibility because of greater exposure of mistakes.  These are real concerns that require consideration when working towards more open workflows.  
 
-In conventional academic settings, competition for resources (e.g., via grant funding) is real issue and being open can be seen as a risk to the competitive edge.  We cannot dismiss this fact, but rather we can think about a lack of openness as a hindrance to forward progress and stifled creativity.  
+In conventional academic settings, competition for resources (e.g., via grant funding) is a real issue and being open can be seen as a risk to the competitive edge.  We cannot dismiss this fact, but rather we can think about a lack of openness as a hindrance to forward progress and stifled creativity.  
 
 Think about being open as a means to finding your next collaborator.  Creating [FAIR](#fair) data opens the door for others to engage with your science.  In fact, being open can increase the competitiveness of research proposals by building a stronger team that collaborates and shares data through better workflows. 
 
@@ -55,6 +61,10 @@ First time practitioners of open science also worry about the risk of "airing th
 These fears are unfounded as the scientific process by definition is iterative.  Hypotheses are supported or refuted through trial and error - if you're getting your answer after one pass, you're probably not doing it right. Making the process more transparent can help build trust as your collaborators can better appreciate how decisions and conclusions were made.  
 
 Mistakes in research are also very common, much more so than many people realize.  By being open, it is true that mistakes are more visible, but this also provides a mechanism for fixing. Being open can lead to a better product by simply having more eyes on the process.  It also helps normalize mistakes as part of the process - perfection is an unrealistic expectation. 
+
+<h3>`r fa('hat-wizard')` Discussion</h3>
+
+What are your personal concerns about adopting open science? 
 
 ## What does it mean to be open?
 
@@ -68,17 +78,20 @@ Maybe there are legal contexts to being open.  For example, Florida has "sunshin
 
 Maybe you're the one that makes the call about being open.  For administrators or management staff, it's important to create a culture that promotes and supports open science.  Allow space and time for your staff to learn new skills.  Realize that investing time in open science is an investment in the future.  
 
+<h3>`r fa('hat-wizard')` Discussion</h3>
+
+What does being open mean to you? What do you think being open means to your employer?
+
 ## Something is better than nothing
 
-First time open science enthusiasts can be overwhelmed by the apparent need to check all the boxes on the open science list.  There's often a prevailing sentiment that you're not doing open science unless you do all the things.  This is simply not true. 
+First time open science enthusiasts can be overwhelmed by the apparent need to check all the boxes on the open science list.  There's often a prevailing sentiment that you're not doing open science unless you do all the things.  This is simply not true. Just remember that doing something is a huge improvement over doing nothing.
 
-Just remember this simple concept:
-
-> "Something is better than nothing!"
-
-Openness in science exists on a spectrum.  Your goal should be incremental movement away from the completely closed end of the spectrum. Perhaps you set a goal of only accomplishing one open science task for a particular project. Maybe you start by developing a simple metadata text file or developing a data dictionary. Or maybe you make a commitment to try a new communcation platform for collaborative engagement.
+Openness in science exists on a spectrum.  Your goal should be incremental movement away from the completely closed end of the spectrum. Perhaps you set a goal of only accomplishing one open science task for a particular project. Maybe you start by developing a simple metadata text file or developing a data dictionary. Or maybe you make a commitment to try a new communication platform for collaborative engagement.
 
 Channeling this concept, @Wilson17 discuss “good enough practices” in scientific computing, acknowledging that very few of us are professionally trained in these disciplines and sometimes “good enough” is all we can ask for. @Lowenberg21 also advocate for simple adoption, rather than perfection, when it comes to data citation practices. 
 
 So, be kind to yourself when learning new skills and realize that the first step will likely be frustration, but through frustration comes experience. The more comfortable you become in mastering a new task, the more likely you’ll be able to attempt additional tasks in the future.
 
+<h3>`r fa('hat-wizard')` Discussion</h3>
+
+What are some simple things you can do to help you adopt open science?  

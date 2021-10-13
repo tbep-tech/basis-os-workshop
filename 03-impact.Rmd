@@ -47,7 +47,7 @@ It's often said that 90% of working with data is cleaning (or "wrangling"), wher
 
 The [FAIR](#fair) principles outlined in the first module are especially useful when working with data for open science applications.  Many of the collaborative tools in the second module can help you work towards putting FAIR data into practice.  In this module, we'll go a step further to discuss how data structure, including metadata, can produce a FAIR dataset. 
 
-## Principles of tidy data
+## Principles of tidy data (#tidy)
 
 At their core, tabular data allow you to store information as observations in rows and variables in columns, yet its very common to try to make a data table more than it should be.  Unless you spend a lot of time working with data, it can be difficult to recognize common mistakes that lead to "table abuse".  
 
