@@ -169,7 +169,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.1" data-path="impact.html"><a href="impact.html#lesson-outline-2"><i class="fa fa-check"></i><b>3.1</b> Lesson Outline</a></li>
 <li class="chapter" data-level="3.2" data-path="impact.html"><a href="impact.html#goals-and-motivation-2"><i class="fa fa-check"></i><b>3.2</b> Goals and motivation</a></li>
 <li class="chapter" data-level="3.3" data-path="impact.html"><a href="impact.html#data-as-the-foundation-for-open-science"><i class="fa fa-check"></i><b>3.3</b> Data as the foundation for open science</a></li>
-<li class="chapter" data-level="3.4" data-path="impact.html"><a href="impact.html#principles-of-tidy-data-tidy"><i class="fa fa-check"></i><b>3.4</b> Principles of tidy data (#tidy)</a></li>
+<li class="chapter" data-level="3.4" data-path="impact.html"><a href="impact.html#tidy"><i class="fa fa-check"></i><b>3.4</b> Principles of tidy data</a></li>
 <li class="chapter" data-level="3.5" data-path="impact.html"><a href="impact.html#data-dictionaries"><i class="fa fa-check"></i><b>3.5</b> Data dictionaries</a></li>
 <li class="chapter" data-level="3.6" data-path="impact.html"><a href="impact.html#importance-of-metadata"><i class="fa fa-check"></i><b>3.6</b> Importance of metadata</a></li>
 </ul></li>
@@ -210,7 +210,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li><a href="implement.html#goals-and-motivation-3">Goals and motivation</a></li>
 <li><a href="impact.html#data-as-the-foundation-for-open-science">Data as the foundation for open science</a></li>
-<li>[Principles of tidy data]</li>
+<li><a href="impact.html#tidy">Principles of tidy data</a></li>
 <li><a href="impact.html#data-dictionaries">Data dictionaries</a></li>
 <li><a href="impact.html#importance-of-metadata">Importance of metadata</a></li>
 </ul>
@@ -242,8 +242,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>It’s often said that 90% of working with data is cleaning (or “wrangling”), whereas the actual analysis and interpretation part is a small fraction of your total effort. Using better data management practices will not only help you save time, it’s also a service for your colleagues and future collaborators. Therefore, better data management leads to more open science.</p>
 <p>The <a href="basics.html#fair">FAIR</a> principles outlined in the first module are especially useful when working with data for open science applications. Many of the collaborative tools in the second module can help you work towards putting FAIR data into practice. In this module, we’ll go a step further to discuss how data structure, including metadata, can produce a FAIR dataset.</p>
 </div>
-<div id="principles-of-tidy-data-tidy" class="section level2">
-<h2><span class="header-section-number">3.4</span> Principles of tidy data (#tidy)</h2>
+<div id="tidy" class="section level2">
+<h2><span class="header-section-number">3.4</span> Principles of tidy data</h2>
 <p>At their core, tabular data allow you to store information as observations in rows and variables in columns, yet its very common to try to make a data table more than it should be. Unless you spend a lot of time working with data, it can be difficult to recognize common mistakes that lead to “table abuse”.</p>
 <p>Before we get into tidy data, we need to discuss some of the downfalls of Excel as a data management system. There are <a href="http://www.eusprig.org/horror-stories.htm">many examples</a> that demonstrate how Excel has contributed to costly mistakes through the abuse of tables, often to the detriment of science <span class="citation">(Ziemann, Eren, and El-Osta <a href="#ref-Ziemann16" role="doc-biblioref">2016</a>)</span>.</p>
 <p>Excel allows you to abuse your data in many ways, such as adding color to cells, embedding formulas, and automatically formatting cell types. The problem occurs when this organization becomes ambiguous and only has meaning inside the head of the person who created the spreadsheet. Embedding formulas that reference specific locations in or across spreadsheets is also a nightmare scenario for reproducibility.</p>
