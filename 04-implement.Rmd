@@ -17,7 +17,7 @@ library(fontawesome)
 
 ## Goals and motivation
 
-We finish our workshop with a discussion of what it means to use open science in the real world. It's great to talk about the value of open science, but it's a completely different ball game when it comes to putting these ideas into practice.  Our goal is that you leave this workshop an advocate and early adopter for the ideas we discussed today - spread these ideas to your peers and colleagues!  To realistically achieve this goal, we will talk about some of the challenges you will face during this journey to help you develop a realistic expectation for implementing open science in the wild.
+We finish our workshop with a discussion of what it means to use open science in the real world. It's great to talk about the value of open science, but it's a completely different ball game when it comes to putting these ideas into practice.  Our goal is that you leave this workshop an advocate and early adopter for the ideas we discussed today - spread these ideas to your peers and colleagues!  To realistically achieve this goal, we will talk about some of the challenges you will face during this journey to help you develop a realistic expectation of what's to come.
 
 * __Goal__: Understand common hurdles in adopting open science and how to overcome them  
 * __Motivation__: Become the "open science" expert at your institution!
@@ -27,6 +27,14 @@ We finish our workshop with a discussion of what it means to use open science in
 ```{r, out.width = '60%'}
 knitr::include_graphics('img/challenge.png')
 ```
+
+<h4>`r fa('exclamation-circle')` Challenge</h4> 
+
+*It's hard to learn new tools!*
+
+<h4>`r fa('thumbs-up')` Solution</h4> 
+
+*It's an investment, look to the community!*
 
 You've probably seen a graphic like this if you've ever taken a course in R or Python.  The hope is that you're able to quickly reach the land of sunshine and bunnies, but the path is treacherous and even insurmountable for some.  
 
@@ -50,6 +58,14 @@ How can you engage your peers to develop a shared workspace to learn new tools? 
 knitr::include_graphics('img/fishbowl.png')
 ```
 
+<h4>`r fa('exclamation-circle')` Challenge</h4> 
+
+*Being open is a liability!*
+
+<h4>`r fa('thumbs-up')` Solution</h4> 
+
+*Being open helps you collaborate, increases competitiveness, and creates a better scientific product!*
+
 Practicing open science can feel like science in a fish bowl. Although this is kind of the goal, many view this transparency as a liability. Many fear having their ideas "scooped" or losing credibility because of greater exposure of mistakes.  These are real concerns that require consideration when working towards more open workflows.  
 
 In conventional academic settings, competition for resources (e.g., via grant funding) is a real issue and being open can be seen as a risk to the competitive edge.  We cannot dismiss this fact, but rather we can think about a lack of openness as a hindrance to forward progress and stifled creativity.  
@@ -68,21 +84,37 @@ What are your personal concerns about adopting open science?
 
 ## What does it mean to be open?
 
-Also realize that open science can mean different things to different people.  By extension, this also applies to institutions . We presented the [five schools](#schools) of open science to help conceptualize ideas and tools when we discuss what it means to different groups. 
+<h4>`r fa('exclamation-circle')` Challenge</h4> 
+
+*People and institutions define open differently!*
+
+<h4>`r fa('thumbs-up')` Solution</h4> 
+
+*Understand the context and demonstrate the value!*
+
+Also realize that open science can mean different things to different people.  By extension, this also applies to institutions. We presented the [five schools](#schools) of open science to help conceptualize ideas and tools when we discuss what it means to different groups. 
 
 Think about your employer and what they might care about if you advocate for adoption of open science.  Do you need to convince them that there is value in being open?  What is their value proposition? What are the hurdles to achieving openness at your institution? 
 
 For many institutions, being open may come with IT hurdles as you push for alternative software platforms. Working with IT staff to develop trust and comfort for new software may be your burden.  
 
-Maybe there are legal contexts to being open.  For example, Florida has "sunshine laws" that obligates all communications as public record.  What does this mean for using new workflows in open science?  Is this is an improvement or a liability (see [previous section](#fear-of-exposure))? 
+Maybe there are legal contexts to being open.  For example, Florida has "sunshine laws" that obligates all communications at public insitutions as public record.  What does this mean for using new workflows in open science?  Is this is an improvement or a liability (see [previous section](#fear-of-exposure))? 
 
-Maybe you're the one that makes the call about being open.  For administrators or management staff, it's important to create a culture that promotes and supports open science.  Allow space and time for your staff to learn new skills.  Realize that investing time in open science is an investment in the future.  
+If you're an administrator or manager, maybe you're the one that makes the call about being open. It's important for you to create a culture that promotes and supports open science.  Allow space and time for your staff to learn new skills.  Realize that investing time in open science is an investment in the future.  
 
 <h3>`r fa('hat-wizard')` Discussion</h3>
 
 What does being open mean to you? What do you think being open means to your employer?
 
 ## Something is better than nothing
+
+<h4>`r fa('exclamation-circle')` Challenge</h4> 
+
+*Doing all the things is impossible!*
+
+<h4>`r fa('thumbs-up')` Solution</h4> 
+
+*Start small, incremental progress is the name of the game!*
 
 First time open science enthusiasts can be overwhelmed by the apparent need to check all the boxes on the open science list.  There's often a prevailing sentiment that you're not doing open science unless you do all the things.  This is simply not true. Just remember that doing something is a huge improvement over doing nothing.
 
@@ -94,4 +126,4 @@ So, be kind to yourself when learning new skills and realize that the first step
 
 <h3>`r fa('hat-wizard')` Discussion</h3>
 
-What are some simple things you can do to help you adopt open science?  
+What are some simple things you can do to beging adopting open science?  
