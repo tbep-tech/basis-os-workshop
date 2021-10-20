@@ -60,7 +60,7 @@ knitr::include_graphics('img/fishbowl.png')
 
 <h4>`r fa('exclamation-circle')` Challenge</h4> 
 
-*Being open makes me nervous!*
+*Being open makes me nervousgit stat!*
 
 <h4>`r fa('thumbs-up')` Solution</h4> 
 
