@@ -104,7 +104,7 @@ Some examples of data repositories, most are domain-specific:
 
 Every great collaborative team does not begin work before a Code of Conduct is created.  This documents a set of community and social standards within which the work can be completed.  It ensures all viewpoints are heard and respected and establishes a means by which conflicts can be resolved.  
 
-Here's a great example from our friends at [openscapes](https://www.openscapes.org/code-of-conduct/).
+Here's a great example from our friends at [openscapes](https://www.openscapes.org/code-of-conduct/) and one from the [ROpenSci](https://ropensci.org/code-of-conduct/) community.  Some guidance for creating a code of conduct is also provided in this [blog post](https://ropensci.org/blog/2016/12/21/commcallv12-review-coc/) from ROpenSci.
 
 The goal of every code of conduct is to ensure an agreed upon set of norms are used by all team members to help create a safe and positive experience. 
 
@@ -112,6 +112,7 @@ The goal of every code of conduct is to ensure an agreed upon set of norms are u
 
 Develop a code of conduct for your group in a shared workspace.  Items to consider:
 
+1. What are reasonable expectations for the group members?
 1. How is inclusion defined and encouraged? 
 1. How are similarities and differences recognized?
 1. How will conflicts be managed?
