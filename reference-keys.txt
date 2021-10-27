@@ -34,3 +34,9 @@ learning-curves
 fear-of-exposure
 what-does-it-mean-to-be-open
 something-is-better-than-nothing
+open-science-websites
+bulding-data-management-plans
+tbep-r-trainings
+r-lessons-tutorials
+r-ebookscourses
+gitgithub
