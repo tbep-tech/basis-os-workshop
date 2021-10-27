@@ -16,12 +16,13 @@ The following is a non-exhaustive list of additional resources you can use for c
 * [NOAA Reproducible Reporting with R](https://noaa-iea.github.io/r3-train/index.html){target="_blank"}
 * [PeerJ collection on practical data science](https://peerj.com/collections/50-practicaldatascistats){target="_blank"}
 
-### Bulding Data Management Plans
+### Data Management Tools
 
 * [Environmental Data Initiative Data Management Resources](https://environmentaldatainitiative.org/dm-resources/){target="_blank"}
 * [University of California DMPTool](https://dmptool.org/){target="_blank"}
 * [US Geological Survey resources for Metadata Creation](https://www.usgs.gov/products/data-and-tools/data-management/metadata-creation){target="_blank"}
 * [ELIXIR and others Data Stewardship Wizard](https://ds-wizard.org/){target="_blank"}
+* [TBEP Data Management SOP](https://tbep-tech.github.io/data-management-sop){target="_blank"}
 
 ### TBEP R Trainings
 
