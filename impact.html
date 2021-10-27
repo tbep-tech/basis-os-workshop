@@ -252,7 +252,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="tidy" class="section level2">
 <h2><span class="header-section-number">3.4</span> Principles of tidy data</h2>
 <p>At their core, tabular data allow you to store information as observations in rows and variables in columns, yet it’s very common to try to make a data table more than it should be. Unless you spend a lot of time working with data, it can be difficult to recognize common mistakes that lead to <em>table abuse</em>.</p>
-<p>Before we get into tidy data, we need to discuss some of the downfalls of Excel as a data management system. There are <a href="http://www.eusprig.org/horror-stories.htm">many examples</a> that demonstrate how Excel has contributed to costly mistakes through the abuse of tables, often to the detriment of science <span class="citation">(Ziemann, Eren, and El-Osta <a href="#ref-Ziemann16" role="doc-biblioref">2016</a>)</span>.</p>
+<p>Before we get into tidy data, we need to discuss some of the downfalls of Excel as a data management system. There are <a href="http://www.eusprig.org/horror-stories.htm" target="_blank">many examples</a> that demonstrate how Excel has contributed to costly mistakes through the abuse of tables, often to the detriment of science <span class="citation">(Ziemann, Eren, and El-Osta <a href="#ref-Ziemann16" role="doc-biblioref">2016</a>)</span>.</p>
 <p>Excel allows you to abuse your data in many ways, such as adding color to cells, embedding formulas, and automatically formatting cell types. The problem occurs when this organization becomes ambiguous and only has meaning inside the head of the person who created the spreadsheet. Embedding formulas that reference specific locations in or across spreadsheets is also a nightmare scenario for reproducibility.</p>
 <p><img src="img/excel_bad.png" width="80%" style="display: block; margin: auto;" /></p>
 <p>If you absolutely must use Excel to store data, the only acceptable format is a rectangular, flat file. What do we mean by this?</p>
@@ -265,7 +265,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>No cell formatting, no embedded formulas, no multiple spreadsheets in the same file, and data entered only as alphanumeric characters.</p>
 </blockquote>
 <p><span class="citation">Broman and Woo (<a href="#ref-Broman18" role="doc-biblioref">2018</a>)</span> provide an excellent guide that expands on these ideas. Essentially, these best practices force you to isolate the analysis from the data - many people use Excel to mix the two, leading to problems.</p>
-<p>Now we can talk about tidy data. The “tidy” data principles developed by Hadley Wickham <span class="citation">(Wickham <a href="#ref-Wickham14c" role="doc-biblioref">2014</a>)</span> are a set of simple rules for storing tabular data that have motivated the development of the wildly popular <a href="https://www.tidyverse.org/">tidyverse</a> suite of R packages <span class="citation">(Wickham et al. <a href="#ref-Wickham19" role="doc-biblioref">2019</a>)</span>. The rules are simple:</p>
+<p>Now we can talk about tidy data. The “tidy” data principles developed by Hadley Wickham <span class="citation">(Wickham <a href="#ref-Wickham14c" role="doc-biblioref">2014</a>)</span> are a set of simple rules for storing tabular data that have motivated the development of the wildly popular <a href="https://www.tidyverse.org/" target="_blank">tidyverse</a> suite of R packages <span class="citation">(Wickham et al. <a href="#ref-Wickham19" role="doc-biblioref">2019</a>)</span>. The rules are simple:</p>
 <ol style="list-style-type: decimal">
 <li>Each variable must have its own column;</li>
 <li>Each observation must have its own row; and,</li>
@@ -311,7 +311,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## # … with 17 more rows</code></pre>
 </div>
 <h3>
-<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M496 448H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h480c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16zm-304-64l-64-32 64-32 32-64 32 64 64 32-64 32-16 32h208l-86.41-201.63a63.955 63.955 0 0 1-1.89-45.45L416 0 228.42 107.19a127.989 127.989 0 0 0-53.46 59.15L64 416h144l-16-32zm64-224l16-32 16 32 32 16-32 16-16 32-16-32-32-16 32-16z"/></svg> Exercise
+<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M496 448H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h480c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16zm-304-64l-64-32 64-32 32-64 32 64 64 32-64 32-16 32h208l-86.41-201.63a63.955 63.955 0 0 1-1.89-45.45L416 0 228.42 107.19a127.989 127.989 0 0 0-53.46 59.15L64 416h144l-16-32zm64-224l16-32 16 32 32 16-32 16-16 32-16-32-32-16 32-16z"/></svg> Exercise and discussion
 </h3>
 <p>Now try it on your own. Download the <a href="https://github.com/tbep-tech/cerf-os-workshop/raw/master/data/untidy.xlsx">untidy</a> dataset and make it tidy using your preferred software.</p>
 </div>
@@ -344,7 +344,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 </ul>
 <h3>
-<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M496 448H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h480c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16zm-304-64l-64-32 64-32 32-64 32 64 64 32-64 32-16 32h208l-86.41-201.63a63.955 63.955 0 0 1-1.89-45.45L416 0 228.42 107.19a127.989 127.989 0 0 0-53.46 59.15L64 416h144l-16-32zm64-224l16-32 16 32 32 16-32 16-16 32-16-32-32-16 32-16z"/></svg> Exercise
+<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M496 448H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h480c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16zm-304-64l-64-32 64-32 32-64 32 64 64 32-64 32-16 32h208l-86.41-201.63a63.955 63.955 0 0 1-1.89-45.45L416 0 228.42 107.19a127.989 127.989 0 0 0-53.46 59.15L64 416h144l-16-32zm64-224l16-32 16 32 32 16-32 16-16 32-16-32-32-16 32-16z"/></svg> Exercise and discussion
 </h3>
 <p>Create a data dictionary for the <a href="https://github.com/tbep-tech/cerf-os-workshop/raw/master/data/tidy.xlsx">tidy</a> dataset from the previous example.</p>
 </div>
@@ -357,7 +357,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>A suite of industry or disciplinary standards as well as additional internal and external documentation and other data necessary for the identification, representation, interoperability, technical management, performance, and use of data contained in an information system.</p>
 </blockquote>
 <p>Why don’t we see more metadata in the wild? Short answer is that it’s often an afterthought, if considered at all. Creating metadata is usually tedious and the return on investment is not apparent at onset of a project. However, the collective growth of sciences and its application to real world problems is dependent on metadata.</p>
-<p>The US Geological Survey provides a useful document on creating <a href="https://prd-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/atoms/files/Metadata%20in%20Plain%20Language_508compliant.pdf">Metadata in “plain language”</a> to distill the basic information contained in a metadata file. It provides a workflow for answering the “who”, “what”, “when”, “where”, “why”, and “how” questions for metadata. Below is a brief synopsis:</p>
+<p>The US Geological Survey provides a useful document on creating <a href="https://prd-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/atoms/files/Metadata%20in%20Plain%20Language_508compliant.pdf" target="_blank">Metadata in “plain language”</a> to distill the basic information contained in a metadata file. It provides a workflow for answering the “who”, “what”, “when”, “where”, “why”, and “how” questions for metadata. Below is a brief synopsis:</p>
 <blockquote>
 <p>What does the dataset describe?</p>
 </blockquote>
@@ -382,11 +382,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>How can someone get a copy of the dataset?</p>
 </blockquote>
 <p>Good metadata has information on who contact for getting the data. This contact may not be the same as who created the dataset (e.g., IT staff). For archived or publicly available data, this information is more important for who to contact should someone have questions. Information on obtaining a copy of the data should also describe any special software or licensing issues related to accessing the data.</p>
-<p>Once you’ve gathered this information, how do you turn it into literal metadata? It depends on how deep you want to go. At it’s simplest, your metadata could be a simple text file with answers to the questions. Or it could be a specific file format used by modern data archive repositories (e.g., <a href="https://docs.ropensci.org/EML/">EML</a> format).</p>
+<p>Once you’ve gathered this information, how do you turn it into literal metadata? It depends on how deep you want to go. At it’s simplest, your metadata could be a simple text file with answers to the questions. Or it could be a specific file format used by modern data archive repositories (e.g., <a href="https://docs.ropensci.org/EML/" target="_blank">EML</a> format).</p>
 <p>Here’s an example of a bare bones metadata file. One could easily type this up in a text file or spreadsheet.</p>
 <p><img src="img/desotometa.PNG" width="100%" style="display: block; margin: auto;" /></p>
 <h3>
-<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M496 448H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h480c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16zm-304-64l-64-32 64-32 32-64 32 64 64 32-64 32-16 32h208l-86.41-201.63a63.955 63.955 0 0 1-1.89-45.45L416 0 228.42 107.19a127.989 127.989 0 0 0-53.46 59.15L64 416h144l-16-32zm64-224l16-32 16 32 32 16-32 16-16 32-16-32-32-16 32-16z"/></svg> Exercise
+<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M496 448H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h480c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16zm-304-64l-64-32 64-32 32-64 32 64 64 32-64 32-16 32h208l-86.41-201.63a63.955 63.955 0 0 1-1.89-45.45L416 0 228.42 107.19a127.989 127.989 0 0 0-53.46 59.15L64 416h144l-16-32zm64-224l16-32 16 32 32 16-32 16-16 32-16-32-32-16 32-16z"/></svg> Exercise and discussion
 </h3>
 <p>Create a metadata file for the <a href="https://github.com/tbep-tech/cerf-os-workshop/raw/master/data/tidy.xlsx">tidy</a> dataset from the previous example. Just start by using your data dictionary and develop narrative answers for “who”, “what”, “when”, “where”, “why”, and “how” to describe your dataset. Get creative with your descriptions since this is a made up dataset.</p>
 
