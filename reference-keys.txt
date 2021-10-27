@@ -4,7 +4,7 @@ goals-and-motivation
 why-open-science
 learning-and-speaking-the-language-of-open-science
 fair
-schools-of-thought-schools
+schools
 collaborate
 lesson-outline-1
 goals-and-motivation-1

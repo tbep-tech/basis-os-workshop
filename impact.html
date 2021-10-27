@@ -145,9 +145,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="1.3" data-path="basics.html"><a href="basics.html#why-open-science"><i class="fa fa-check"></i><b>1.3</b> Why open science?</a></li>
 <li class="chapter" data-level="1.4" data-path="basics.html"><a href="basics.html#learning-and-speaking-the-language-of-open-science"><i class="fa fa-check"></i><b>1.4</b> Learning and speaking the language of open science</a></li>
 <li class="chapter" data-level="1.5" data-path="basics.html"><a href="basics.html#fair"><i class="fa fa-check"></i><b>1.5</b> The FAIR principles</a></li>
-<li class="chapter" data-level="1.6" data-path="basics.html"><a href="basics.html#schools-of-thought-schools"><i class="fa fa-check"></i><b>1.6</b> Schools of thought (#schools)</a></li>
+<li class="chapter" data-level="1.6" data-path="basics.html"><a href="basics.html#schools"><i class="fa fa-check"></i><b>1.6</b> Schools of thought</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="collaborate.html"><a href="collaborate.html"><i class="fa fa-check"></i><b>2</b> Open Science for collaboration</a><ul>
+<li class="chapter" data-level="2" data-path="collaborate.html"><a href="collaborate.html"><i class="fa fa-check"></i><b>2</b> Open science for collaboration</a><ul>
 <li class="chapter" data-level="2.1" data-path="collaborate.html"><a href="collaborate.html#lesson-outline-1"><i class="fa fa-check"></i><b>2.1</b> Lesson Outline</a></li>
 <li class="chapter" data-level="2.2" data-path="collaborate.html"><a href="collaborate.html#goals-and-motivation-1"><i class="fa fa-check"></i><b>2.2</b> Goals and motivation</a></li>
 <li class="chapter" data-level="2.3" data-path="collaborate.html"><a href="collaborate.html#essential-elements-of-collaboration"><i class="fa fa-check"></i><b>2.3</b> Essential elements of collaboration</a><ul>
@@ -235,7 +235,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ol>
 <p>Anybody who has ever worked with data knows that it comes in many shapes and sizes, most more like the right side of the above picture. Poor data management occurs for many reasons, but here’s a few of the common reasons:</p>
 <ul>
-<li>What’s easy to enter in the field doesn’t usually translate to easy analysis</li>
+<li>What’s easy for recording data doesn’t usually translate to easy analysis</li>
 <li>Egregious use of Excel as data management software</li>
 <li>Metadata is a chore that is often an afterthought</li>
 </ul>
@@ -244,7 +244,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="tidy" class="section level2">
 <h2><span class="header-section-number">3.4</span> Principles of tidy data</h2>
-<p>At their core, tabular data allow you to store information as observations in rows and variables in columns, yet its very common to try to make a data table more than it should be. Unless you spend a lot of time working with data, it can be difficult to recognize common mistakes that lead to “table abuse”.</p>
+<p>At their core, tabular data allow you to store information as observations in rows and variables in columns, yet it’s very common to try to make a data table more than it should be. Unless you spend a lot of time working with data, it can be difficult to recognize common mistakes that lead to <em>table abuse</em>.</p>
 <p>Before we get into tidy data, we need to discuss some of the downfalls of Excel as a data management system. There are <a href="http://www.eusprig.org/horror-stories.htm">many examples</a> that demonstrate how Excel has contributed to costly mistakes through the abuse of tables, often to the detriment of science <span class="citation">(Ziemann, Eren, and El-Osta <a href="#ref-Ziemann16" role="doc-biblioref">2016</a>)</span>.</p>
 <p>Excel allows you to abuse your data in many ways, such as adding color to cells, embedding formulas, and automatically formatting cell types. The problem occurs when this organization becomes ambiguous and only has meaning inside the head of the person who created the spreadsheet. Embedding formulas that reference specific locations in or across spreadsheets is also a nightmare scenario for reproducibility.</p>
 <p><img src="img/excel_bad.png" width="80%" style="display: block; margin: auto;" /></p>
@@ -258,7 +258,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>No cell formatting, no embedded formulas, no multiple spreadsheets in the same file, and data entered only as alphanumeric characters.</p>
 </blockquote>
 <p><span class="citation">Broman and Woo (<a href="#ref-Broman18" role="doc-biblioref">2018</a>)</span> provide an excellent guide that expands on these ideas. Essentially, these best practices force you to isolate the analysis from the data - many people use Excel to mix the two, leading to problems.</p>
-<p>Now we can talk about tidy data. The “tidy” data principles developed by Hadley Wickham <span class="citation">(Wickham <a href="#ref-Wickham14c" role="doc-biblioref">2014</a>)</span> are a set of simple rules for storing tabular data that have motivated the development of the wildly popular tidyverse suite of R packages <span class="citation">(Wickham et al. <a href="#ref-Wickham19" role="doc-biblioref">2019</a>)</span>. The rules are simple:</p>
+<p>Now we can talk about tidy data. The “tidy” data principles developed by Hadley Wickham <span class="citation">(Wickham <a href="#ref-Wickham14c" role="doc-biblioref">2014</a>)</span> are a set of simple rules for storing tabular data that have motivated the development of the wildly popular <a href="https://www.tidyverse.org/">tidyverse</a> suite of R packages <span class="citation">(Wickham et al. <a href="#ref-Wickham19" role="doc-biblioref">2019</a>)</span>. The rules are simple:</p>
 <ol style="list-style-type: decimal">
 <li>Each variable must have its own column;</li>
 <li>Each observation must have its own row; and,</li>
@@ -310,7 +310,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="data-dictionaries" class="section level2">
 <h2><span class="header-section-number">3.5</span> Data dictionaries</h2>
-<p>Once you understand the tidy principles, you’ll find that analysis is much, much easier. More importantly, this also greatly facilitates documentation for the explicit purpose of more open sharing. As responsible data stewards, we need to think of data as a living resource for open collaboration that is not just a means for more conventional scientific products (e.g., a publication). Data are increasingly being documented and cited as unique entities and we need proper documentation to help support the FAIR principles.</p>
+<p>Once you understand the tidy principles, you’ll find that analysis is much, much easier. More importantly, this also facilitates documentation for the explicit purpose of more open sharing. As responsible data stewards, we need to think of data as a living resource for open collaboration that is not just a means for more conventional scientific products (e.g., a publication). Data are increasingly being documented and cited as unique entities and we need proper documentation to help support the FAIR principles.</p>
 <p>A good first step in documentation is to create a data dictionary. This will help us when we start creating <a href="impact.html#importance-of-metadata">metadata</a>. Think of this as the specific description of the contents of a tabular data file. Developing a data dictionary not only helps with metadata, but also helps you think more clearly about your data.</p>
 <p>A data dictionary describes column names and the type of data in each column. Simple things like how you name a data column can have larger implications for downstream analysis pipelines or interpretability of a dataset.</p>
 <p>Here’s an example of a data dictionary for a made up dataset. Without seeing the actua data, you get a good sense of what’s included and acceptable values for adding new data.</p>
@@ -325,7 +325,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </li>
 <li>It may also be useful to identify a “plot name” for each column name that uses proper spelling, punctuation, and units (if applicable). Using a column name directly in a graphic is generally a bad idea since their meaning outside of the dataset may not be obvious.</li>
 </ul></li>
-<li><p>Column types</p>
+<li><p>Data types</p>
 <ul>
 <li>Describe the type of data in each column, e.g., numerical measurements, categorical descriptors, or counts of observations. Never, ever mix data types in the same column.<br />
 </li>
@@ -345,7 +345,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2><span class="header-section-number">3.6</span> Importance of metadata</h2>
 <p>How many times have you been sent a dataset without any idea what it contains or why it was created? How are you sure the information is valid and that your analysis takes into account the limitations of the data? How many times have you willfully sent someone a dataset without fully providing this information?</p>
 <p>Without metadata it’s impossible to know critical details about a dataset that can inform its analysis, and more importantly, its use to inform decision-making. Curating data should be synonymous with metadata generation and is an important part of open science. We cannot provide open data in good faith without also providing metadata.</p>
-<p>Metadata is literally defined as “data about data” or “information about information”. It varies from simple text descriptions of a dataset, such as “who”, “what”, “when”, “where”, “why”, and “how”, to more formalized standards with the intent of preparing your data for archival in a long-term repository. A useful definition is provided by <span class="citation">Gilliland (<a href="#ref-Gilliland16" role="doc-biblioref">2016</a>)</span>:</p>
+<p>Metadata is literally defined as “data about data”. It varies from simple text descriptions of a dataset, such as “who”, “what”, “when”, “where”, “why”, and “how”, to more formalized standards with the intent of preparing your data for archival in a long-term repository. A useful definition is provided by <span class="citation">Gilliland (<a href="#ref-Gilliland16" role="doc-biblioref">2016</a>)</span>:</p>
 <blockquote>
 <p>A suite of industry or disciplinary standards as well as additional internal and external documentation and other data necessary for the identification, representation, interoperability, technical management, performance, and use of data contained in an information system.</p>
 </blockquote>
