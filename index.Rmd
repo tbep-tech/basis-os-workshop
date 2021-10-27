@@ -13,6 +13,8 @@ css: style.css
 
 ```{r}
 knitr::opts_chunk$set(echo = F, fig.align = 'center', out.width = '100%')
+
+library(fontawesome)
 ```
 
 # Course synopsis {-}
@@ -27,16 +29,30 @@ By the end of this workshop, you should have a solid understanding of fundamenta
 
 ## Agenda {-}
 
-* \@ref(basics): The basics of open science (__30 min__)
-* \@ref(collaborate): Open Science for collaboration (__90 min__)
-* \@ref(impact): Open science for impactful products (__90 min__)
-* \@ref(implement): Lowering barriers to inclusion and addressing key critiques (__30 min__)
+* \@ref(basics): [The basics of open science](#basics) (__30 min__)
+* \@ref(collaborate): [Open science for collaboration](#collaborate) (__90 min__)
+* \@ref(impact): [Open science for impactful products](#impact) (__90 min__)
+* \@ref(implement): [Lowering barriers to inclusion and addressing key critiques](#implement) (__30 min__)
+
+Each module uses a set of common icons to orient you to specific tasks or experiences during this workshop.  These include the following:
+
+<h4>`r fa('hat-wizard')` Exercise or discussion</h4>
+
+<h4>`r fa('chalkboard-teacher')` Watch and learn</h4>
+
+<h4>`r fa('question')` Description of a collaborative tool</h4>
+
+<h4>`r fa('thumbs-up')` Pros of a collaborative tool or solution to an open science challenge</h4>
+
+<h4>`r fa('thumbs-down')` Cons of a collaborative tool</h4>
+
+<h4>`r fa('exclamation-circle')` Challenge to overcome for using open science</h4> 
 
 ## Instructors{-}
 
-[Dr. Chris Anastasiou](mailto:chris.anastasiou@swfwmd.state.fl.us) is a Chief Water Quality Scientist and the Seagrass Mapping Program Lead for the Southwest Florida Water Management District. He holds a Ph.D. in Marine Science from the University of South Florida and has been working in and around the springs of Florida for more than 25 years.
+[Dr. Chris Anastasiou](mailto:chris.anastasiou@swfwmd.state.fl.us) is a Chief Water Quality Scientist and the Seagrass Mapping Program Lead for the Southwest Florida Water Management District. He holds a PhD in Marine Science from the University of South Florida and has been working in and around the springs of Florida for more than 25 years.
 
-[Dr. Marcus Beck](mailto:mbeck@tbep.org) is the Program Scientist for the Tampa Bay Estuary Program and is developing data analysis and visualization methods for Bay health indicators. He received his BS in Zoology from the University of Florida in 2007 and his MSc and PhD in Conservation Biology from the University of Minnesota in 2009 and 2013. Marcus has experience researching environmental indicators and developing open science products to support environmental decision-making. Marcus is also an avid software developer and creator of online dashboards that facilitate science communication.
+[Dr. Marcus Beck](mailto:mbeck@tbep.org) is the Program Scientist for the Tampa Bay Estuary Program and is developing data analysis and visualization methods for Bay health indicators. He received his PhD in Conservation Biology from the University of Minnesota in 2013. Marcus has experience researching environmental indicators and developing open science products to support environmental decision-making. Marcus is also an open source software and dashboard developer to facilitate science application.
 
 ----------
 

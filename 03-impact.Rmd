@@ -39,7 +39,7 @@ You can probably recall several past instances when poor data management has bee
 
 Anybody who has ever worked with data knows that it comes in many shapes and sizes, most more like the right side of the above picture.  Poor data management occurs for many reasons, but here's a few of the common reasons: 
 
-* What's easy to enter in the field doesn't usually translate to easy analysis
+* What's easy for recording data doesn't usually translate to easy analysis
 * Egregious use of Excel as data management software
 * Metadata is a chore that is often an afterthought
 
@@ -49,7 +49,7 @@ The [FAIR](#fair) principles outlined in the first module are especially useful 
 
 ## Principles of tidy data {#tidy}
 
-At their core, tabular data allow you to store information as observations in rows and variables in columns, yet its very common to try to make a data table more than it should be.  Unless you spend a lot of time working with data, it can be difficult to recognize common mistakes that lead to "table abuse".  
+At their core, tabular data allow you to store information as observations in rows and variables in columns, yet it's very common to try to make a data table more than it should be.  Unless you spend a lot of time working with data, it can be difficult to recognize common mistakes that lead to *table abuse*.
 
 Before we get into tidy data, we need to discuss some of the downfalls of Excel as a data management system. There are [many examples](http://www.eusprig.org/horror-stories.htm) that demonstrate how Excel has contributed to costly mistakes through the abuse of tables, often to the detriment of science [@Ziemann16]. 
 
@@ -71,7 +71,7 @@ A __flat__ file:
 
 @Broman18 provide an excellent guide that expands on these ideas. Essentially, these best practices force you to isolate the analysis from the data - many people use Excel to mix the two, leading to problems. 
 
-Now we can talk about tidy data. The "tidy" data principles developed by Hadley Wickham [@Wickham14c] are a set of simple rules for storing tabular data that have motivated the development of the wildly popular tidyverse suite of R packages [@Wickham19]. The rules are simple: 
+Now we can talk about tidy data. The "tidy" data principles developed by Hadley Wickham [@Wickham14c] are a set of simple rules for storing tabular data that have motivated the development of the wildly popular [tidyverse](https://www.tidyverse.org/) suite of R packages [@Wickham19]. The rules are simple: 
 
 1. Each variable must have its own column;
 1. Each observation must have its own row; and,
@@ -120,7 +120,7 @@ Now try it on your own. Download the [untidy](https://github.com/tbep-tech/cerf-
 
 ## Data dictionaries
 
-Once you understand the tidy principles, you'll find that analysis is much, much easier.  More importantly, this also greatly facilitates documentation for the explicit purpose of more open sharing.  As responsible data stewards, we need to think of data as a living resource for open collaboration that is not just a means for more conventional scientific products (e.g., a publication).  Data are increasingly being documented and cited as unique entities and we need proper documentation to help support the FAIR principles. 
+Once you understand the tidy principles, you'll find that analysis is much, much easier.  More importantly, this also facilitates documentation for the explicit purpose of more open sharing.  As responsible data stewards, we need to think of data as a living resource for open collaboration that is not just a means for more conventional scientific products (e.g., a publication).  Data are increasingly being documented and cited as unique entities and we need proper documentation to help support the FAIR principles. 
 
 A good first step in documentation is to create a data dictionary. This will help us when we start creating [metadata](#importance-of-metadata). Think of this as the specific description of the contents of a tabular data file. Developing a data dictionary not only helps with metadata, but also helps you think more clearly about your data. 
 
@@ -140,7 +140,7 @@ Here we provide some general guidelines for developing your own data dictionary.
      * Try to avoid spaces or commas in column names since some software may interpret that as the start of a new column.  
      * It may also be useful to identify a "plot name" for each column name that uses proper spelling, punctuation, and units (if applicable).  Using a column name directly in a graphic is generally a bad idea since their meaning outside of the dataset may not be obvious.   
 
-* Column types
+* Data types
 
      * Describe the type of data in each column, e.g., numerical measurements, categorical descriptors, or counts of observations.  Never, ever mix data types in the same column.  
      * If your data are continuous numeric values, try to identify an acceptable range for the values, e.g., are there minimum or maximum values that would indicate the data are out of range? Also make note of the units that were used.  
@@ -157,7 +157,7 @@ How many times have you been sent a dataset without any idea what it contains or
 
 Without metadata it's impossible to know critical details about a dataset that can inform its analysis, and more importantly, its use to inform decision-making.  Curating data should be synonymous with metadata generation and is an important part of open science.  We cannot provide open data in good faith without also providing metadata. 
 
-Metadata is literally defined as "data about data" or "information about information". It varies from simple text descriptions of a dataset, such as "who", "what", "when", "where", "why", and "how", to more formalized standards with the intent of preparing your data for archival in a long-term repository. A useful definition is provided by @Gilliland16:  
+Metadata is literally defined as "data about data". It varies from simple text descriptions of a dataset, such as "who", "what", "when", "where", "why", and "how", to more formalized standards with the intent of preparing your data for archival in a long-term repository. A useful definition is provided by @Gilliland16:  
 
 > A suite of industry or disciplinary standards as well as additional internal and external documentation and other data necessary for the identification, representation, interoperability, technical management, performance, and use of data contained in an information system.
 

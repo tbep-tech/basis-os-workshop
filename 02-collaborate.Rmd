@@ -1,4 +1,4 @@
-# Open Science for collaboration {#collaborate}
+# Open science for collaboration {#collaborate}
 
 ```{r, echo = F, warning = F, message = F}
 knitr::opts_chunk$set(echo = F, fig.align = 'center', out.width = '100%')
@@ -171,7 +171,7 @@ Cloud-based Platform for sharing documents, worksheets, slides, etc. Follows a f
 
 <h4>`r fa('thumbs-up')` Pros</h4>
 
-Easy to use and can be a very open space for collaboration. Fairly interoperable with different file formats.  Some functionality with version control (i.e., ability to "roll-back" to previous versions and to view changes).    
+Easy to use and can be a very open space for collaboration. Fairly interoperable with different file formats.  Some functionality with version control (i.e., ability to "revert" to previous versions and to view changes).    
 
 <h4>`r fa('thumbs-down')` Cons</h4>
 

@@ -17,7 +17,7 @@ library(fontawesome)
 
 ## Goals and motivation
 
-We finish our workshop with a discussion of what it means to use open science in the real world. It's great to talk about the value of open science, but it's a completely different ball game when it comes to putting these ideas into practice.  Our goal is that you leave this workshop an advocate and early adopter for the ideas we discussed today - spread these ideas to your peers and colleagues!  To realistically achieve this goal, we will talk about some of the challenges you will face during this journey to help you develop a realistic expectation of what's to come.
+We finish our workshop with a discussion of what it means to use open science in the real world. It's great to talk about the value of open science and the tools you can use, but it's a completely different ball game when it comes to putting these ideas into practice.  Our goal is that you leave this workshop an advocate and early adopter for the ideas we discussed today - spread these ideas to your peers and colleagues!  To realistically achieve this goal, we will talk about some of the challenges you will face so you can develop a realistic expectation of what's to come.
 
 * __Goal__: Understand common hurdles in adopting open science and how to overcome them  
 * __Motivation__: Become the "open science" expert at your institution!
@@ -40,7 +40,7 @@ You've probably seen a graphic like this if you've ever taken a course in R or P
 
 A huge obstacle in using open science is that the toolsets can have steep learning curves.  More popular platforms, such as Excel, are used by many because they're simple and intuitive.  However, [as noted earlier](#tidy), FAIR workflows and tools are sacrificed for ease of use.  
 
-Although it's true that adopting new tools will slow forward progress, this is only temporary.  Consider your path towards learning new platforms as an investment in your future.  The immediate benefit may not be apparent, but you'll soon wonder how you ever got by before.  
+Although it's true that adopting new tools will slow forward progress, this is only temporary.  Consider your path towards learning new platforms an investment in your future.  The immediate benefit may not be apparent, but you'll soon wonder how you ever got by before.  
 
 It's also helpful to think about the broader community that can support you along this journey. Learning alone can be discouraging and we strongly recommend that you tap into the diverse community of educators, mentors, bloggers, and friends that can help.  Even you can create a community of practice!
 
@@ -96,9 +96,9 @@ Also realize that open science can mean different things to different people.  B
 
 Think about your employer and what they might care about if you advocate for adoption of open science.  Do you need to convince them that there is value in being open?  What is their value proposition? What are the hurdles to achieving openness at your institution? 
 
-For many institutions, being open may come with IT hurdles as you push for alternative software platforms. Working with IT staff to develop trust and comfort for new software may be your burden.  
+For many institutions, being open may come with IT hurdles as you push for alternative software platforms. Working with IT staff to develop trust and comfort for new software may be your burden, but as always, it's an investment in the future.  
 
-Maybe there are legal contexts to being open.  For example, Florida has "sunshine laws" that obligates all communications at public insitutions as public record.  What does this mean for using new workflows in open science?  Is this is an improvement or a liability (see [previous section](#fear-of-exposure))? 
+Maybe there are legal contexts to being open.  For example, Florida has [the "Sunshine" law](https://myfloridalegal.com/pages.nsf/Main/DC0B20B7DC22B7418525791B006A54E4) that makes all government communications public record.  What does this mean for using new workflows in open science?  Is this is an improvement or a liability (see [previous section](#fear-of-exposure))? 
 
 If you're an administrator or manager, maybe you're the one that makes the call about being open. It's important for you to create a culture that promotes and supports open science.  Allow space and time for your staff to learn new skills.  Realize that investing time in open science is an investment in the future.  
 
@@ -122,8 +122,8 @@ Openness in science exists on a spectrum.  Your goal should be incremental movem
 
 Channeling this concept, @Wilson17 discuss “good enough practices” in scientific computing, acknowledging that very few of us are professionally trained in these disciplines and sometimes “good enough” is all we can ask for. @Lowenberg21 also advocate for simple adoption, rather than perfection, when it comes to data citation practices. 
 
-So, be kind to yourself when learning new skills and realize that the first step will likely be frustration, but through frustration comes experience. The more comfortable you become in mastering a new task, the more likely you’ll be able to attempt additional tasks in the future.
+So, be kind to yourself when learning new skills and realize that the first step will likely be frustration, but through frustration comes experience. The more comfortable you become with a new task, the more likely you’ll be able to attempt additional tasks in the future.
 
 <h3>`r fa('hat-wizard')` Discussion</h3>
 
-What are some simple things you can do to beging adopting open science?  
+What are some simple things you can do to begin adopting open science?  
