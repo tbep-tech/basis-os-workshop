@@ -48,7 +48,7 @@ It's also helpful to think about the broader community that can support you alon
 knitr::include_graphics('img/code_hero.jpg')
 ```
 
-<h3>`r fa('hat-wizard')` Discussion</h3>
+<h3>`r fa('hat-wizard')` Exercise and discussion</h3>
 
 How can you engage your peers to develop a shared workspace to learn new tools? What tools will you learn?
 
@@ -78,7 +78,7 @@ These fears are unfounded as the scientific process by definition is iterative. 
 
 Mistakes in research are also very common, much more so than many people realize.  By being open, it is true that mistakes are more visible, but this also provides a mechanism for fixing. Being open can lead to a better product by simply having more eyes on the process.  It also helps normalize mistakes as part of the process - perfection is an unrealistic expectation. 
 
-<h3>`r fa('hat-wizard')` Discussion</h3>
+<h3>`r fa('hat-wizard')` Exercise and discussion</h3>
 
 What are your personal concerns about adopting open science? 
 
@@ -98,11 +98,11 @@ Think about your employer and what they might care about if you advocate for ado
 
 For many institutions, being open may come with IT hurdles as you push for alternative software platforms. Working with IT staff to develop trust and comfort for new software may be your burden, but as always, it's an investment in the future.  
 
-Maybe there are legal contexts to being open.  For example, Florida has [the "Sunshine" law](https://myfloridalegal.com/pages.nsf/Main/DC0B20B7DC22B7418525791B006A54E4) that makes all government communications public record.  What does this mean for using new workflows in open science?  Is this is an improvement or a liability (see [previous section](#fear-of-exposure))? 
+Maybe there are legal contexts to being open.  For example, Florida has [the "Sunshine" law](https://myfloridalegal.com/pages.nsf/Main/DC0B20B7DC22B7418525791B006A54E4){target="_blank"} that makes all government communications public record.  What does this mean for using new workflows in open science?  Is this is an improvement or a liability (see [previous section](#fear-of-exposure))? 
 
 If you're an administrator or manager, maybe you're the one that makes the call about being open. It's important for you to create a culture that promotes and supports open science.  Allow space and time for your staff to learn new skills.  Realize that investing time in open science is an investment in the future.  
 
-<h3>`r fa('hat-wizard')` Discussion</h3>
+<h3>`r fa('hat-wizard')` Exercise and discussion</h3>
 
 What does being open mean to you? What do you think being open means to your employer?
 
@@ -124,6 +124,6 @@ Channeling this concept, @Wilson17 discuss “good enough practices” in scient
 
 So, be kind to yourself when learning new skills and realize that the first step will likely be frustration, but through frustration comes experience. The more comfortable you become with a new task, the more likely you’ll be able to attempt additional tasks in the future.
 
-<h3>`r fa('hat-wizard')` Discussion</h3>
+<h3>`r fa('hat-wizard')` Exercise and discussion</h3>
 
 What are some simple things you can do to begin adopting open science?  

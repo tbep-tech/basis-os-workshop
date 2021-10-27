@@ -85,7 +85,7 @@ This workflow is similar to the original scientific method, but the technical co
 
 Throughout this workshop, we'll learn about some open science tools that can be used in this generalized workflow to achieve better science in less time [@Lowndes17].
 
-Now let's settle on a definition for open science (from Open Knowledge International, http://opendefinition.org/, https://creativecommons.org/):
+Now let's settle on a definition for open science (from Open Knowledge International, [http://opendefinition.org/](http://opendefinition.org/){target="_blank"}, [https://creativecommons.org/](https://creativecommons.org/){target="_blank"}):
 
 > "The practice of science in such a way that others can __collaborate__ and __contribute__, where research data, lab notes and other research processes are __freely available__, under terms that enable __reuse__, __redistribution__ and __reproduction__ of the research and its underlying data and methods."
 
@@ -139,6 +139,6 @@ knitr::include_graphics('img/fiveschools.PNG')
 
 These are of course only conceptual boxes and there's considerable overlap across all schools when open science is used in practice.  For our purposes, we'll be talking about ideas and tools from the pragmatic, infrastructure, and democratic schools of the thought.  The end goal is to provide you with the means to create more efficient and impactful science that can more readily be used by others in a collaborative setting.  
 
-<h3>`r fa('hat-wizard')` Discussion</h3>
+<h3>`r fa('hat-wizard')` Exercise and discussion</h3>
 
 How do you currently define open science? Has any of the above changed your understanding of what open science means for research and/or resource management?

@@ -36,11 +36,11 @@ Does this look familiar?
 knitr::include_graphics('img/old_files.png')
 ```
 
-Although the above comic from [xkcd](https://xkcd.com/) speaks directly to file management, it hints at a broader problem of personal information management that can seriously complicate working with others. I'm sure we've all struggled to find that one file for that one project from a vague recollection of seeing it a few months ago.
+Although the above comic from [xkcd](https://xkcd.com/){target="_blank"} speaks directly to file management, it hints at a broader problem of personal information management that can seriously complicate working with others. I'm sure we've all struggled to find that one file for that one project from a vague recollection of seeing it a few months ago.
 
 Collaborative work can be facilitated through workflow management that helps you break out of old habits.  We'll introduce some specific internet-based tools below to facilitate workflows either for yourself or, better yet, working with others. These can help propel you towards open science.
 
-Here, we introduce the [Kanban](https://en.wikipedia.org/wiki/Kanban_(development)) approach to workflow management. The idea is simple.  Create a task-oriented workflow of card management organized by progress. It looks something like this: 
+Here, we introduce the [Kanban](https://en.wikipedia.org/wiki/Kanban_(development)){target="_blank"} approach to workflow management. The idea is simple.  Create a task-oriented workflow of card management organized by progress. It looks something like this: 
 
 ```{r, out.width = '60%'}
 knitr::include_graphics('img/kanban.jpg')
@@ -53,6 +53,10 @@ As shown, this approach can work as a literal, physical board or as one used dig
 * Establishes cards as specific tasks
 
 Many of the open science tools we describe below use this system. It is a generalizable format that works in different settings, whether it be general project management or something more formal like software development. 
+
+<h3>`r fa('chalkboard-teacher')` Watch and learn</h3>
+
+Workflow management in the real world - using GitHub to collaborate.
 
 ### Version control 
 
@@ -72,9 +76,9 @@ Version control is a way to track the development history of a project. It serve
 
 It's more than saving files. Documenting changes with a set of commands that follow strict rules provides a transparent record for yourself and others, and establishing permanency ensures that any of the changes that are made can be vetted and accessed as needed. Think of it as an insurance plan for your project.
 
-By far, the most widely use software for version control is [Git](https://git-scm.com/).  Although we do not cover the specifics of this software, it's useful to understand the purpose and what it can do in making your work more open and impactful. Git is integrated with many popular open source development platforms, such as [RStudio](https://support.rstudio.com/hc/en-us/articles/200532077-Version-Control-with-Git-and-SVN). 
+By far, the most widely use software for version control is [Git](https://git-scm.com/){target="_blank"}.  Although we do not cover the specifics of this software, it's useful to understand the purpose and what it can do in making your work more open and impactful. Git is integrated with many popular open source development platforms, such as [RStudio](https://support.rstudio.com/hc/en-us/articles/200532077-Version-Control-with-Git-and-SVN){target="_blank"}. 
 
-Many people often confuse Git with [GitHub](https://www.github.com). GitHub is an online platform for working collaboratively through Git AND it allows you to be open with your work. We'll provide some examples below of how this can be done.  Importantly, you do not need to be an expert in Git to be able to use GitHub.  This speaks volumes for how team efficiency can be improved through better collaboration. 
+Many people often confuse Git with [GitHub](https://www.github.com){target="_blank"}. GitHub is an online platform for working collaboratively through Git AND it allows you to be open with your work. We'll provide some examples below of how this can be done.  Importantly, you do not need to be an expert in Git to be able to use GitHub.  This speaks volumes for how team efficiency can be improved through better collaboration. 
 
 <h3>`r fa('chalkboard-teacher')` Watch and learn</h3>
 
@@ -96,19 +100,19 @@ Such repositories follow strict, but necessary guidelines, to ensure your data l
 
 Some examples of data repositories, most are domain-specific:
 
-* [KNB](https://knb.ecoinformatics.org/): Knowledge Network for Biocomplexity, a general purpose repository for ecological data
-* [HydroShare](https://www.hydroshare.org/): Data and models used in hydrology
-* [OPC](https://opc.dataone.org/data): California Ocean Protection Council, marine and coastal datasets
+* [KNB](https://knb.ecoinformatics.org/){target="_blank"}: Knowledge Network for Biocomplexity, a general purpose repository for ecological data
+* [HydroShare](https://www.hydroshare.org/){target="_blank"}: Data and models used in hydrology
+* [OPC](https://opc.dataone.org/data){target="_blank"}: California Ocean Protection Council, marine and coastal datasets
 
 ### Code of Conduct
 
 Every great collaborative team does not begin work before a Code of Conduct is created.  This documents a set of community and social standards within which the work can be completed.  It ensures all viewpoints are heard and respected and establishes a means by which conflicts can be resolved.  
 
-Here's a great example from our friends at [openscapes](https://www.openscapes.org/code-of-conduct/) and one from the [ROpenSci](https://ropensci.org/code-of-conduct/) community.  Some guidance for creating a code of conduct is also provided in this [blog post](https://ropensci.org/blog/2016/12/21/commcallv12-review-coc/) from ROpenSci.
+Here's a great example from our friends at [openscapes](https://www.openscapes.org/code-of-conduct/){target="_blank"} and one from the [ROpenSci](https://ropensci.org/code-of-conduct/){target="_blank"} community.  Some guidance for creating a code of conduct is also provided in this [blog post](https://ropensci.org/blog/2016/12/21/commcallv12-review-coc/){target="_blank"} from ROpenSci.
 
 The goal of every code of conduct is to ensure an agreed upon set of norms are used by all team members to help create a safe and positive experience. 
 
-<h3>`r fa('hat-wizard')` Exercise</h3>
+<h3>`r fa('hat-wizard')` Exercise and discussion</h3>
 
 Develop a code of conduct for your group in a shared workspace.  Items to consider:
 
@@ -126,7 +130,7 @@ Now we introduce some specific web-based tools that you can use to improve colla
 ```{r, fig.align = 'left', out.width = '15%'}
 knitr::include_graphics('img/slack-logo-icon.png')
 ```
-https://slack.com/
+[https://slack.com/](https://slack.com/){target="_blank"}
 
 <h4>`r fa('question')` What</h4>
 
@@ -145,7 +149,7 @@ Yet another thing to monitor.  Free subscription limits archive of messages.  Co
 ```{r, fig.align = 'left', out.width = '15%'}
 knitr::include_graphics('img/trello.png')
 ```
-https://trello.com/
+[https://trello.com/](https://trello.com/){target="_blank"}
 
 <h4>`r fa('question')` What</h4>
 
@@ -164,8 +168,8 @@ Not entirely open because it's only visible to yourself or those you explicitly 
 ```{r, fig.align = 'left', out.width = '15%'}
 knitr::include_graphics('img/Google_Drive_logo.png')
 ```
-https://google.com/drive
-
+[https://google.com/drive](https://google.com/drive){target="_blank"}
+ 
 <h4>`r fa('question')` What</h4>
 
 Cloud-based Platform for sharing documents, worksheets, slides, etc. Follows a familiar file-based GUI structure that is common to most operating systems. 
@@ -183,7 +187,7 @@ Requires a Google account and access can be tricky depending on institution.  Ev
 ```{r, fig.align = 'left', out.width = '25%'}
 knitr::include_graphics('img/office365.png')
 ```
-https://google.com/drive
+[https://www.microsoft.com/en-us/microsoft-365](https://www.microsoft.com/en-us/microsoft-365){target="_blank"}
 
 <h4>`r fa('question')` What</h4>
 
@@ -202,7 +206,7 @@ Requires a Microsoft account and access can be tricky depending on institution. 
 ```{r, fig.align = 'left', out.width = '25%'}
 knitr::include_graphics('img/Octocat.png')
 ```
-https://github.com
+[https://github.com](https://github.com){target="_blank"}
 
 <h4>`r fa('question')` What</h4>
 
@@ -210,7 +214,7 @@ Cloud-based Platform for sharing code with Git version control. Supports sharing
 
 <h4>`r fa('thumbs-up')` Pros</h4>
 
-Collaborative and fully transparent work environment for files under version control. Supports workflow management through issue tracking and Kanban style project boards. Links to third-party platforms for archiving and DOI generation (e.g., [Zenodo](https://zenodo.org/)). Octocat mascot is super cute. 
+Collaborative and fully transparent work environment for files under version control. Supports workflow management through issue tracking and Kanban style project boards. Links to third-party platforms for archiving and DOI generation (e.g., [Zenodo](https://zenodo.org/){target="_blank"}). Octocat mascot is super cute. 
 
 <h4>`r fa('thumbs-down')` Cons</h4>
 
@@ -220,7 +224,7 @@ Learning curve is steep if you want to fully leverage version control. Not a for
 
 Setting up a project management system with GitHub.
 
-<h3>`r fa('hat-wizard')` Exercise</h3>
+<h3>`r fa('hat-wizard')` Exercise and discussion</h3>
 
 In small groups, setup a shared workspace using GitHub and create a project management board. 
 

@@ -51,7 +51,7 @@ The [FAIR](#fair) principles outlined in the first module are especially useful 
 
 At their core, tabular data allow you to store information as observations in rows and variables in columns, yet it's very common to try to make a data table more than it should be.  Unless you spend a lot of time working with data, it can be difficult to recognize common mistakes that lead to *table abuse*.
 
-Before we get into tidy data, we need to discuss some of the downfalls of Excel as a data management system. There are [many examples](http://www.eusprig.org/horror-stories.htm) that demonstrate how Excel has contributed to costly mistakes through the abuse of tables, often to the detriment of science [@Ziemann16]. 
+Before we get into tidy data, we need to discuss some of the downfalls of Excel as a data management system. There are [many examples](http://www.eusprig.org/horror-stories.htm){target="_blank"} that demonstrate how Excel has contributed to costly mistakes through the abuse of tables, often to the detriment of science [@Ziemann16]. 
 
 Excel allows you to abuse your data in many ways, such as adding color to cells, embedding formulas, and automatically formatting cell types.  The problem occurs when this organization becomes ambiguous and only has meaning inside the head of the person who created the spreadsheet.  Embedding formulas that reference specific locations in or across spreadsheets is also a nightmare scenario for reproducibility.
 
@@ -71,7 +71,7 @@ A __flat__ file:
 
 @Broman18 provide an excellent guide that expands on these ideas. Essentially, these best practices force you to isolate the analysis from the data - many people use Excel to mix the two, leading to problems. 
 
-Now we can talk about tidy data. The "tidy" data principles developed by Hadley Wickham [@Wickham14c] are a set of simple rules for storing tabular data that have motivated the development of the wildly popular [tidyverse](https://www.tidyverse.org/) suite of R packages [@Wickham19]. The rules are simple: 
+Now we can talk about tidy data. The "tidy" data principles developed by Hadley Wickham [@Wickham14c] are a set of simple rules for storing tabular data that have motivated the development of the wildly popular [tidyverse](https://www.tidyverse.org/){target="_blank"} suite of R packages [@Wickham19]. The rules are simple: 
 
 1. Each variable must have its own column;
 1. Each observation must have its own row; and,
@@ -114,7 +114,7 @@ dat
 ```
 </div>
 
-<h3>`r fa('hat-wizard')` Exercise</h3>
+<h3>`r fa('hat-wizard')` Exercise and discussion</h3>
 
 Now try it on your own. Download the [untidy](https://github.com/tbep-tech/cerf-os-workshop/raw/master/data/untidy.xlsx) dataset and make it tidy using your preferred software. 
 
@@ -147,7 +147,7 @@ Here we provide some general guidelines for developing your own data dictionary.
      * For categorical descriptors, identify all possible categories that are acceptable values for the column, e.g., small, medium, or large for a qualitative descriptor of size.  
      * For dates, make note of the format, e.g., YYYY-MM-DD.  For time, identify the timezone. 
 
-<h3>`r fa('hat-wizard')` Exercise</h3>
+<h3>`r fa('hat-wizard')` Exercise and discussion</h3>
 
 Create a data dictionary for the [tidy](https://github.com/tbep-tech/cerf-os-workshop/raw/master/data/tidy.xlsx) dataset from the previous example. 
 
@@ -163,7 +163,7 @@ Metadata is literally defined as "data about data". It varies from simple text d
 
 Why don't we see more metadata in the wild?  Short answer is that it's often an afterthought, if considered at all.  Creating metadata is usually tedious and the return on investment is not apparent at onset of a project.  However, the collective growth of sciences and its application to real world problems is dependent on metadata. 
 
-The US Geological Survey provides a useful document on creating [Metadata in "plain language"](https://prd-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/atoms/files/Metadata%20in%20Plain%20Language_508compliant.pdf) to distill the basic information contained in a metadata file.  It provides a workflow for answering the "who", "what", "when", "where", "why", and "how" questions for metadata. Below is a brief synopsis:
+The US Geological Survey provides a useful document on creating [Metadata in "plain language"](https://prd-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/atoms/files/Metadata%20in%20Plain%20Language_508compliant.pdf){target="_blank"} to distill the basic information contained in a metadata file.  It provides a workflow for answering the "who", "what", "when", "where", "why", and "how" questions for metadata. Below is a brief synopsis:
 
 > What does the dataset describe?
 
@@ -189,7 +189,7 @@ It's also important to explicitly note instances when the data could be question
 
 Good metadata has information on who contact for getting the data.  This contact may not be the same as who created the dataset (e.g., IT staff).  For archived or publicly available data, this information is more important for who to contact should someone have questions.  Information on obtaining a copy of the data should also describe any special software or licensing issues related to accessing the data.
 
-Once you've gathered this information, how do you turn it into literal metadata?  It depends on how deep you want to go.  At it's simplest, your metadata could be a simple text file with answers to the questions.  Or it could be a specific file format used by modern data archive repositories (e.g., [EML](https://docs.ropensci.org/EML/) format).  
+Once you've gathered this information, how do you turn it into literal metadata?  It depends on how deep you want to go.  At it's simplest, your metadata could be a simple text file with answers to the questions.  Or it could be a specific file format used by modern data archive repositories (e.g., [EML](https://docs.ropensci.org/EML/){target="_blank"} format).  
 
 Here's an example of a bare bones metadata file. One could easily type this up in a text file or spreadsheet.
 
@@ -197,6 +197,6 @@ Here's an example of a bare bones metadata file. One could easily type this up i
 knitr::include_graphics('img/desotometa.PNG')
 ```
 
-<h3>`r fa('hat-wizard')` Exercise</h3>
+<h3>`r fa('hat-wizard')` Exercise and discussion</h3>
 
 Create a metadata file for the [tidy](https://github.com/tbep-tech/cerf-os-workshop/raw/master/data/tidy.xlsx) dataset from the previous example. Just start by using your data dictionary and develop narrative answers for "who", "what", "when", "where", "why", and "how" to describe your dataset.  Get creative with your descriptions since this is a made up dataset. 
