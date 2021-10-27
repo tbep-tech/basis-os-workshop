@@ -35,7 +35,7 @@ fear-of-exposure
 what-does-it-mean-to-be-open
 something-is-better-than-nothing
 open-science-websites
-bulding-data-management-plans
+data-management-tools
 tbep-r-trainings
 r-lessons-tutorials
 r-ebookscourses
