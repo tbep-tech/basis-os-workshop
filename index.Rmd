@@ -29,10 +29,10 @@ By the end of this workshop, you should have a solid understanding of fundamenta
 
 ## Agenda {-}
 
-* \@ref(basics): [The basics of open science](#basics) (__30 min__)
-* \@ref(collaborate): [Open science for collaboration](#collaborate) (__90 min__)
-* \@ref(impact): [Open science for impactful products](#impact) (__90 min__)
-* \@ref(implement): [Lowering barriers to inclusion and addressing key critiques](#implement) (__30 min__)
+1. [The basics of open science](#basics) (__30 min__)
+1. [Open science for collaboration](#collaborate) (__90 min__)
+1. [Open science for impactful products](#impact) (__90 min__)
+1. [Lowering barriers to inclusion and addressing key critiques](#implement) (__30 min__)
 
 Each module uses a set of common icons to orient you to specific tasks or experiences during this workshop.  These include the following:
 
