@@ -53,6 +53,10 @@ At their core, tabular data allow you to store information as observations in ro
 
 Before we get into tidy data, we need to discuss some of the downfalls of Excel as a data management system. There are [many examples](http://www.eusprig.org/horror-stories.htm){target="_blank"} that demonstrate how Excel has contributed to costly mistakes through the abuse of tables, often to the detriment of science [@Ziemann16]. 
 
+```{r, out.width = '70%'}
+knitr::include_graphics('img/excel_dates.JPG')
+```
+
 Excel allows you to abuse your data in many ways, such as adding color to cells, embedding formulas, and automatically formatting cell types.  The problem occurs when this organization becomes ambiguous and only has meaning inside the head of the person who created the spreadsheet.  Embedding formulas that reference specific locations in or across spreadsheets is also a nightmare scenario for reproducibility.
 
 ```{r, out.width = '80%'}

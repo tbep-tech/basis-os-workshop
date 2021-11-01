@@ -40,7 +40,7 @@ Although the above comic from [xkcd](https://xkcd.com/){target="_blank"} speaks 
 
 Collaborative work can be facilitated through workflow management that helps you break out of old habits.  We'll introduce some specific internet-based tools below to facilitate workflows either for yourself or, better yet, working with others. These can help propel you towards open science.
 
-Here, we introduce the [Kanban](https://en.wikipedia.org/wiki/Kanban_(development)){target="_blank"} approach to workflow management. The idea is simple.  Create a task-oriented workflow of card management organized by progress. It looks something like this: 
+Here, we introduce the [Kanban](https://en.wikipedia.org/wiki/Kanban_(development)){target="_blank"} approach to workflow management. The idea is simple.  Create a task-oriented workflow using a card management system organized by progress. It looks something like this: 
 
 ```{r, out.width = '60%'}
 knitr::include_graphics('img/kanban.jpg')
@@ -96,7 +96,7 @@ The absolute best standard for hosting data online is through a __Federated Data
 
 > An online network of connected repositories that use similar standards to collectively store data for discovery and access. Uploading a dataset to one node of a repository will make it available through all other nodes.
 
-Such repositories follow strict, but necessary guidelines, to ensure your data live forever so long as the internet exists. The data are definitely findable (e.g., through a web search), accessible (free to download), and interoperable (accepted standards are ensured).  The "reproducible" aspect can be debatable, but that can be solved through other means (e.g., code sharing).
+Such repositories follow strict but necessary guidelines to ensure your data live forever so long as the internet exists. The data are definitely findable (e.g., through a web search), accessible (free to download), and interoperable (accepted standards are ensured).  The "reproducible" aspect can be debatable, but that can be solved through other means (e.g., code sharing).
 
 Some examples of data repositories, most are domain-specific:
 
@@ -172,7 +172,7 @@ knitr::include_graphics('img/Google_Drive_logo.png')
  
 <h4>`r fa('question')` What</h4>
 
-Cloud-based Platform for sharing documents, worksheets, slides, etc. Follows a familiar file-based GUI structure that is common to most operating systems. 
+Cloud-based platform for sharing documents, worksheets, slides, etc. Follows a familiar file-based GUI structure that is common to most operating systems. 
 
 <h4>`r fa('thumbs-up')` Pros</h4>
 
@@ -191,7 +191,7 @@ knitr::include_graphics('img/office365.png')
 
 <h4>`r fa('question')` What</h4>
 
-Cloud-based Platform for secure sharing of Microsoft documents, worksheets, slides, etc. 
+Cloud-based platform for secure sharing of Microsoft documents, worksheets, slides, etc. 
 
 <h4>`r fa('thumbs-up')` Pros</h4>
 
@@ -210,7 +210,7 @@ knitr::include_graphics('img/Octocat.png')
 
 <h4>`r fa('question')` What</h4>
 
-Cloud-based Platform for sharing code with Git version control. Supports sharing of most file types, although code and text-based files are the primary use.
+Cloud-based platform for sharing code with Git version control. Supports sharing of most file types, although code and text-based files are the primary use.
 
 <h4>`r fa('thumbs-up')` Pros</h4>
 
