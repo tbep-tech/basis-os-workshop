@@ -81,7 +81,7 @@ Now we can talk about tidy data. The "tidy" data principles developed by Hadley 
 1. Each observation must have its own row; and,
 1. Each value must have its own cell.
 
-Graphically, these rules are shown below: 
+Graphically, these rules are shown below [from @Wickham17]: 
 
 ```{r}
 knitr::include_graphics('img/tidy-1.png')
