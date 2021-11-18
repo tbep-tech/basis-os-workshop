@@ -29,6 +29,8 @@ By the end of this workshop, you should have a solid understanding of fundamenta
 
 ## Agenda {-}
 
+Recording: [click here](https://youtu.be/uMNRDIU3T9o)
+
 1. [The basics of open science](#basics) (__30 min__)
 1. [Open science for collaboration](#collaborate) (__90 min__)
 1. [Open science for impactful products](#impact) (__90 min__)
